@@ -1,0 +1,84 @@
+{% load staticfiles %}
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/music_article.css' %}">
+<link rel="stylesheet" href="{% static 'css/APlayer.min.css' %}" />
+<script>
+		/*
+		iOS浏览BUG修复
+		*/
+		(function(doc){var addEvent='addEventListener',type='gesturestart',qsa='querySelectorAll',scales=[1,1],meta=qsa in doc?doc[qsa]('meta[name=viewport]'):[];function fix(){meta.content='width=device-width,minimum-scale='+scales[0]+',maximum-scale='+scales[1];doc.removeEventListener(type,fix,true);}if((meta=meta[meta.length-1])&&addEvent in doc){fix();scales=[.25,1.6];doc[addEvent](type,fix,true);}}(document));
+</script>
+
+
+<div id="article">
+	<div id="article-topic">
+		{{ article.title }}
+		<span>作者：{{article.author}}</span>
+		<span>发布日期：{{ article.publishtime }}</span>
+	</div>
+	<div id="article-content">
+		<div id="article-music">
+			<div id="article-music-container">
+				<div id="player" class="aplayer"></div>
+			</div>
+		</div>
+		<div id="article-tesxt">
+			{{ article.content|safe }}
+		</div>
+	</div>
+	<div id="article-like-share">
+		<div id="article-like">
+			<div><img onclick="zanClick();" src="{% static 'img/zan.png' %}"></div>
+			<span id="article_zan" onclick="zanClick();">赞({{ article.zan }})</span>
+		</div>
+			<div id="article-share">
+			<div id="article-share-text">分享链接：</div>
+			<div id="article-share-ul">
+				<ul>
+					<li>
+						<a href="#"><img src="{% static 'img/footerimg/qq.png' %}" title="分享到QQ空间"></a>
+					</li>
+					<li>
+						<a href="#"><img src="{% static 'img/footerimg/weixin.png' %}" title="分享到微信朋友圈"></a>
+					</li>
+					<li>
+						<a href="#"><img src="{% static 'img/footerimg/xinlang.png' %}" title="分享到新浪微博"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="{% static 'js/APlayer.min.js' %}"></script>
+<script>
+	// 音乐播放器
+	music_name = '{{ article.audio.name }}'
+	music_name = music_name.slice(13, music_name.length-4)
+	var ap1 = new APlayer({
+		element: document.getElementById('player'),
+		narrow: false,    // 是否显示进度条
+		autoplay: false,
+		showlrc: false,
+		music: {
+			title: music_name,
+			author: '',
+			url: '{{ article.audio.url }}',
+			pic: '{% static 'img/musicimg/music_pic.png' %}'
+		}
+	});
+	try{
+		ap1.init();
+	}catch(err){
+		alert('您关闭了一个连接:'+ err);
+	}
+
+
+	// 点赞功能
+	function zanClick(){
+		$.get("{% url 'zan' %}", {'fenlei': '{{ fenlei}}', 'id': {{ article.id }} }, function(res){
+			res = '赞(' + res + ')';
+			$("#article_zan").html(res);
+		})
+	}
+</script>

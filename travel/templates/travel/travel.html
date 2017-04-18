@@ -1,0 +1,95 @@
+{% load staticfiles %}
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="{% static 'travel_css/travel.css' %}">
+
+<div id="travel">
+	<div id="travel-mid">
+
+		<div id="travel-up">
+			<div id="travel-up-topic">慢旅行</div>
+			<div id="travel-up-ul">
+				<ul>
+					<li><a href="{% url 'subpage' 'photography' 'p1' %}">摄&nbsp影</a></li>
+					<li><a href="{% url 'subpage' 'scene' 'p1' %}">景&nbsp点</a></li>
+					<li><a href="{% url 'subpage' 'record' 'p1' %}">记&nbsp录</a></li>
+					<li><a href="{% url 'subpage' 'strategy' 'p1' %}">攻&nbsp略</a></li>
+					<li><a href="{% url 'subpage' 'hotel' 'p1' %}">驿&nbsp站</a></li>
+					<li><a href="{% url 'mainpage' 'travel' 'p1' %}">更&nbsp多</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="travel-down">
+			<div class="travel-col travel-column travel-col-border1">
+				<div class="travel-col-img">
+					<img src="{% if travel.photography.image %} {{ travel.photography.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+				</div>
+				<div class="travel-col-text">
+					<div class="travel-col-text-topic">
+						<a class="travel-col-text-topic-link" href="{% url 'article' 'travel' travel.photography.id %}">{{ travel.photography.title }}</a>
+					</div>
+					<div class="travel-col-text-text">
+						{{ travel.photography.content }}
+					</div>
+				</div>
+			</div>
+
+			<div class="travel-col travel-column">
+				<div class="travel-col-img">
+					<img src="{% if travel.scene.image %} {{ travel.scene.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+				</div>
+				<div class="travel-col-text">
+					<div class="travel-col-text-topic">
+						<a href="{% url 'article' 'travel' travel.scene.id %}">{{ travel.scene.title }}</a>
+					</div>
+					<div class="travel-col-text-text">
+						{{ travel.scene.content }}
+					</div>
+				</div>
+			</div>
+
+			<div class="travel-col travel-column">
+				<div class="travel-col-img">
+					<img src="{% if travel.record.image %} {{ travel.record.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+				</div>
+				<div class="travel-col-text">
+					<div class="travel-col-text-topic">
+						<a href="{% url 'article' 'travel' travel.record.id %}">{{ travel.record.title }}</a>
+					</div>
+					<div class="travel-col-text-text">
+						{{ travel.record.content }}
+					</div>
+				</div>
+			</div>
+
+			<div class="travel-col travel-column">
+				<div class="travel-col-img">
+					<img src="{% if travel.strategy.image %} {{ travel.strategy.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+				</div>
+				<div class="travel-col-text">
+					<div class="travel-col-text-topic">
+						<a href="{% url 'article' 'travel' travel.strategy.id %}">{{ travel.strategy.title }}</a>
+					</div>
+					<div class="travel-col-text-text">
+						{{ travel.strategy.content }}
+					</div>
+				</div>
+			</div>
+
+			<div class="travel-col travel-col-border2">
+				<div class="travel-col-img">
+					<img src="{% if travel.hotel.image %} {{ travel.hotel.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+				</div>
+				<div class="travel-col-text">
+					<div class="travel-col-text-topic">
+						<a href="{% url 'article' 'travel' travel.hotel.id %}">{{ travel.hotel.title }}</a>
+					</div>
+					<div class="travel-col-text-text">
+						{{ travel.hotel.content }}
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>

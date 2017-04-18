@@ -1,0 +1,84 @@
+{% load staticfiles %}
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/main_page_left.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/pagefenye.css' %}">
+
+<!-- 左边 -->
+<div id="page-left">
+	<div id="page-left-article">
+		<div id="page-left-article-topic"></div>
+		<div id="page-left-article-article">
+			<!-- 第x篇文章  start -->
+			{% for art in articles %}
+			<div class="page-article">
+				<div class="page-article-img"><img src=" {% if art.image %} {{ art.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}"></div>
+				<div class="page-article-text">
+					<div class="page-article-topic"><a href="{% url 'article' navname art.id %}">{{ art.title }}</a></div>
+					<div class="page-article-content">{{ art.content }}</div>
+					<div class="page-article-other">
+						<div class="page-article-publish">
+							作者：{{ art.author }}&nbsp&nbsp&nbsp&nbsp
+							发布日期：{{ art.publishtime|date:"Y-m-d H:i:s" }}</div>
+						<div class="page-article-like">
+							<div class="article-img">
+								<img src="{% static 'img/zan.png'%}" onclick="zanClick({{ art.id }});">
+							</div>
+							<div class="article-like">
+								<span id="{{ art.id }}" clsas="article-zan" onclick="zanClick({{ art.id }});">赞({{ art.zan }})
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+			<!-- 第x篇文章  end -->
+
+		</div>
+	</div>
+	<div id="page-split">
+		<div class="pagefenye"></div>
+	</div>
+</div>
+
+<script type="text/javascript" src="{% static 'js/jquery.page.js' %}"></script>
+<script>
+	
+	// 点赞功能
+	function zanClick( id ){
+		$.get("{% url 'zan' %}", {'fenlei': '{{ navname }}', 'id': id }, function(res){
+			res = '赞(' + res + ')';
+			id = '#' + id;
+			$(id).html(res);
+		})
+	}
+
+	// 把上面分类的名字显示出来
+	var navname = '{{ navname }}';
+	if(navname=='life'){
+		showname = '慢生活';
+	}
+	else if (navname=='music'){
+		showname = '慢音乐';
+	}else if (navname=='travel'){
+		showname = '慢旅行';
+	}else if (navname=='lit'){
+		showname = '慢文学';
+	}
+	$("#page-left-article-topic").html(showname);
+
+	// 分页控件
+	var abc = 1;
+	$(".pagefenye").createPage({
+		pageCount:{{ pages_count }},
+		current: {{ page_now }},
+		backFn:function(p){
+			p = 'p' + p;
+			$.get("{% url 'getmainpage' %}", {'navname':navname, 'page_now': p }, function(res){
+				window.location.href = res;
+			})
+		}
+	});
+
+	
+</script>

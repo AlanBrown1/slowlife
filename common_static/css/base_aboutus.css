@@ -1,0 +1,21 @@
+#base_aboutus a:link, #base_aboutus a:visited {
+	text-decoration: none;
+}
+
+#base_aboutus_mid {
+	height: 100%;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#base_aboutus_left {
+	height: 100%;
+	width: 740px;
+	float: left;
+}
+
+#base_aboutus_right {
+	height: 100%;
+	width: 240px;
+	float: right;
+}

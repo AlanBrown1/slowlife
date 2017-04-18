@@ -1,0 +1,260 @@
+body {
+	margin: 0px;
+}
+
+.header-up {
+	height: 100px;
+	background-color: #f2f1ef;
+	border-bottom: 1px solid #FF9999;
+}
+
+.header-upmid {
+	width: 1000px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+.header-img {
+	float: left;
+	margin-left: 5px;
+}
+
+.header-img img {
+	height: 40px;
+	width: 178px;
+	margin-top: 30px;
+}
+
+.header-upp {
+	height: 20px;
+	width: 227px;
+	margin: 48px 0 0 20px;
+}
+
+/*.header-reglog {
+	float: right;
+	width: 62px;
+	height: 100px;
+	font-family: arial;
+}
+
+.header-reglog a {
+	display: block;
+	height: 20px;
+	width: 50px;
+	padding: 5px 5px 8px 6px;
+	color: #fff;
+	font-size: 15px;
+	border-radius: 5px;
+	text-align: center;
+	margin-top: 12px;
+	text-decoration: none;
+}
+
+.header-reg {
+	background-color: #99CC66;
+}
+
+.header-log {
+	background-color: #FF9999;
+}
+*/
+
+#header-offer-contact {
+	float: right;
+	height: 30px;
+	width: 360px;
+	margin-top: 35px;
+}
+
+#header-offer-contact a {
+	text-decoration: none;
+	color: #fff;
+}
+
+#header-offer {
+	float: left;
+	height: 30px;
+	width: 90px;
+	line-height: 30px;
+}
+
+#header-offer a:link, #header-offer a:visited {
+	display: block;
+	height: 30px;
+	width: 80px;
+	text-align: center;
+	border-radius: 5px;
+	color: #fff;
+	background-color: #FF9999;
+}
+
+#header-contact {
+	float: right;
+	height: 30px;
+	width: 260px;
+}
+
+#header-contact span {
+	display: inline-block;
+	height: 30px;
+	width: 90px;
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 5px;
+	background-color: #99ccff;
+}
+
+
+#header-contact-ul {
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+	/*width: 200px;*/
+	float: right;
+	list-style-type: none;
+}
+
+#header-contact ul li {
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+	height: 22px;
+	width: 22px;
+	margin-left: 8px;
+}
+
+#header-contact img {
+	display: inline-block;
+	margin-top: 3px;
+	padding: 0px;
+	height: 20px;
+	width: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header-down {
+	height: 35px;
+	clear: all;
+}
+
+.header-downmid {
+	width: 1000px;
+	margin: 0 auto;
+	background-color: #CCFFFF;
+}
+
+/* ************************************************************   */
+
+/* CSS Document */
+{% load staticfiles %}
+
+html,*,body, div, ul,ol, li,h1,h2,h3,h4,h5,h6,p,span{margin:0;padding:0;}
+body{
+	font-family:"微软雅黑", Arial, Helvetica, sans-serif;
+	/*color:#666666;*/
+	line-height:25px;
+	font-size:14px;
+
+}
+img{vertical-align:middle;}
+em{font-style:normal;}
+a img, :link img, :visited img{border:0;}
+ul, ul li{list-style-type:none;}
+.header-li a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	text-decoration: none;
+	color: #000;
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+#top_bg{
+	height:40px;
+	width:100%;
+	background:#f2f1ef;
+	z-index:999;
+	background-color: #e0e0e0;
+}
+.top{
+	width:996px;
+	height:40px;
+	margin:0 auto;
+}
+/*.top .logo_l{
+	width:100px;
+	height:40px;
+	float:left;
+	background:url(../images/logo.png) no-repeat left;
+}*/
+/*width:auto!important*/
+.nav_z{
+	width: 1080px;
+	height:40px;
+	float:left;
+	position:relative;
+	z-index:999;
+}
+#navul li{
+	float:left;
+	/*width:135px;*/
+	width: 166px;
+	height:40px;
+	position:relative;
+	text-align:center;
+	line-height:40px;
+}
+#navul li a:link, #navul li a:visited{color:#000;font-weight:500;letter-spacing:2px;}
+#navul li ul{
+	display:none;
+	position:absolute;
+	z-index:999;
+	background:#e6e6e6;
+	border:#c6c6c6 1px solid;
+	border-bottom:none;
+	left:-1px;
+}
+#navul li ul li{
+	display:block;
+	width: 164px;
+	float:none;
+	height:35px;
+	position:relative;
+	line-height:35px;
+	border-bottom:#C6C6C6 1px solid;
+	font-size:12px;
+	overflow:hidden
+}
+#navul li.navmoon{
+	background:#CCFFFF;
+	border:#C6C6C6 1px solid;
+	/*width:133px;*/
+	width: 164px;
+	height:38px;
+	line-height:38px;
+}
+/*#navul li.navmoon a{color:#404a58;}
+#navul li.navhome a:hover{color:#FCFF00;}
+#navul li.navmoon ul{display:block;}
+#navul li.navmoon ul a{display:block;width:133px;height:35px;line-height:35px;}
+#navul li.navmoon ul a:hover{color:#0573bd;background:#FFF;}*/
+#navul li.navmoon a{color:#333333;}
+#navul li.navhome a:hover{color:#FF9999;}
+#navul li.navmoon ul{display:block;}
+#navul li.navmoon ul a{display:block;width:164px;height:35px;line-height:35px;}
+#navul li.navmoon ul a:hover{color:#FF9999;background:#CCFFFF;}

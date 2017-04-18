@@ -1,0 +1,962 @@
+卷 本地磁盘 的文件夹 PATH 列表
+卷序列号为 000000F5 0004:9A5E
+G:.
+│  db.sqlite3
+│  manage.py
+│  tree.txt
+│  尺寸.txt
+│  计划.txt
+│  页面图片的尺寸统计.docx
+│  
+├─banner
+│  │  admin.py
+│  │  apps.py
+│  │  models.py
+│  │  tests.py
+│  │  views.py
+│  │  __init__.py
+│  │  
+│  ├─migrations
+│  │  │  __init__.py
+│  │  │  
+│  │  └─__pycache__
+│  │          __init__.cpython-36.pyc
+│  │          
+│  ├─static
+│  │  ├─banner_css
+│  │  │      examples.css
+│  │  │      normalize.css
+│  │  │      slider-pro.min.css
+│  │  │      
+│  │  ├─banner_fonts
+│  │  │      icomoon.eot
+│  │  │      icomoon.svg
+│  │  │      icomoon.ttf
+│  │  │      icomoon.woff
+│  │  │      
+│  │  ├─banner_img
+│  │  │  └─cursor_img
+│  │  │          blank.gif
+│  │  │          closedhand.cur
+│  │  │          openhand.cur
+│  │  │          
+│  │  └─banner_js
+│  │      │  jquery.sliderPro.min.js
+│  │      │  
+│  │      └─fancybox
+│  │          │  blank.gif
+│  │          │  fancybox_loading.gif
+│  │          │  fancybox_loading@2x.gif
+│  │          │  fancybox_overlay.png
+│  │          │  fancybox_sprite.png
+│  │          │  fancybox_sprite@2x.png
+│  │          │  jquery.fancybox.css
+│  │          │  jquery.fancybox.js
+│  │          │  jquery.fancybox.pack.js
+│  │          │  
+│  │          └─helpers
+│  │                  fancybox_buttons.png
+│  │                  jquery.fancybox-buttons.css
+│  │                  jquery.fancybox-buttons.js
+│  │                  jquery.fancybox-media.js
+│  │                  jquery.fancybox-thumbs.css
+│  │                  jquery.fancybox-thumbs.js
+│  │                  
+│  ├─templates
+│  │  └─banner
+│  │          banner.html
+│  │          
+│  └─__pycache__
+│          admin.cpython-36.pyc
+│          models.cpython-36.pyc
+│          __init__.cpython-36.pyc
+│          
+├─common_static
+│  ├─css
+│  │  │  aboutus.css
+│  │  │  APlayer.css
+│  │  │  APlayer.min.css
+│  │  │  article.css
+│  │  │  base_aboutus.css
+│  │  │  base_main_page.css
+│  │  │  base_sub_page.css
+│  │  │  footer.css
+│  │  │  header.css
+│  │  │  main_page_left.css
+│  │  │  man_recommend.css
+│  │  │  material-scrolltop.css
+│  │  │  material-scrolltop.scss
+│  │  │  music_article.css
+│  │  │  notfoundpage.css
+│  │  │  pagefenye.css
+│  │  │  page_right.css
+│  │  │  sub_page_left.css
+│  │  │  
+│  │  └─icons
+│  │          top-arrow.svg
+│  │          
+│  ├─img
+│  │  │  bg.gif
+│  │  │  comment.png
+│  │  │  image_none.png
+│  │  │  manrecommend.png
+│  │  │  textarea.png
+│  │  │  textareadg.png
+│  │  │  zan.png
+│  │  │  
+│  │  ├─bannerimg
+│  │  │      banner1.jpg
+│  │  │      banner2.jpg
+│  │  │      banner3.jpg
+│  │  │      banner4.jpg
+│  │  │      
+│  │  ├─footerimg
+│  │  │      facebook.png
+│  │  │      instagram.png
+│  │  │      qq.png
+│  │  │      twitter.png
+│  │  │      weixin.png
+│  │  │      xinlang.png
+│  │  │      
+│  │  ├─headerimg
+│  │  │      icon.png
+│  │  │      icon_p.png
+│  │  │      icon_p2.png
+│  │  │      page_right.png
+│  │  │      web_icon.png
+│  │  │      
+│  │  ├─musicimg
+│  │  │      music_pic.png
+│  │  │      
+│  │  └─pageimg
+│  │          chuangyi.png
+│  │          geshou.png
+│  │          gonglue.png
+│  │          huacao.png
+│  │          jiankang.png
+│  │          jilu.png
+│  │          jingdian.png
+│  │          leixing.png
+│  │          meishi.png
+│  │          meiwen.png
+│  │          mengchong.png
+│  │          mingzhu.png
+│  │          qinggan.png
+│  │          sheying.png
+│  │          shici.png
+│  │          suibi.png
+│  │          xinqing.png
+│  │          yinyue.png
+│  │          yizhan.png
+│  │          zhenshu.png
+│  │          zhuanji.png
+│  │          
+│  └─js
+│          APlayer.min.js
+│          jquery.min.js
+│          jquery.page.js
+│          material-scrolltop.js
+│          nav.js
+│          
+├─common_templates
+│      aboutus.html
+│      article.html
+│      base_aboutus.html
+│      base_article.html
+│      base_home.html
+│      base_main_page.html
+│      base_man_recommend.html
+│      base_sub_page.html
+│      footer.html
+│      header.html
+│      main_page_left.html
+│      man_recommend.html
+│      music_article.html
+│      notfoundpage.html
+│      page_right.html
+│      sub_page_left.html
+│      
+├─DjangoUeditor
+│  │  adminx.py
+│  │  commands.py
+│  │  forms.py
+│  │  models.py
+│  │  readme.txt
+│  │  settings.py
+│  │  urls.py
+│  │  utils.py
+│  │  views.py
+│  │  widgets.py
+│  │  __init__.py
+│  │  
+│  ├─static
+│  │  └─ueditor
+│  │      │  index.html
+│  │      │  ueditor.all.js
+│  │      │  ueditor.all.min.js
+│  │      │  ueditor.config.js
+│  │      │  ueditor.parse.js
+│  │      │  ueditor.parse.min.js
+│  │      │  UEditorSnapscreen.exe
+│  │      │  
+│  │      ├─dialogs
+│  │      │  │  internal.js
+│  │      │  │  
+│  │      │  ├─anchor
+│  │      │  │      anchor.html
+│  │      │  │      
+│  │      │  ├─attachment
+│  │      │  │  │  attachment.css
+│  │      │  │  │  attachment.html
+│  │      │  │  │  attachment.js
+│  │      │  │  │  
+│  │      │  │  ├─fileTypeImages
+│  │      │  │  │      icon_chm.gif
+│  │      │  │  │      icon_default.png
+│  │      │  │  │      icon_doc.gif
+│  │      │  │  │      icon_exe.gif
+│  │      │  │  │      icon_jpg.gif
+│  │      │  │  │      icon_mp3.gif
+│  │      │  │  │      icon_mv.gif
+│  │      │  │  │      icon_pdf.gif
+│  │      │  │  │      icon_ppt.gif
+│  │      │  │  │      icon_psd.gif
+│  │      │  │  │      icon_rar.gif
+│  │      │  │  │      icon_txt.gif
+│  │      │  │  │      icon_xls.gif
+│  │      │  │  │      
+│  │      │  │  └─images
+│  │      │  │          alignicon.gif
+│  │      │  │          alignicon.png
+│  │      │  │          bg.png
+│  │      │  │          file-icons.gif
+│  │      │  │          file-icons.png
+│  │      │  │          icons.gif
+│  │      │  │          icons.png
+│  │      │  │          image.png
+│  │      │  │          progress.png
+│  │      │  │          success.gif
+│  │      │  │          success.png
+│  │      │  │          
+│  │      │  ├─background
+│  │      │  │  │  background.css
+│  │      │  │  │  background.html
+│  │      │  │  │  background.js
+│  │      │  │  │  
+│  │      │  │  └─images
+│  │      │  │          bg.png
+│  │      │  │          success.png
+│  │      │  │          
+│  │      │  ├─charts
+│  │      │  │  │  chart.config.js
+│  │      │  │  │  charts.css
+│  │      │  │  │  charts.html
+│  │      │  │  │  charts.js
+│  │      │  │  │  
+│  │      │  │  └─images
+│  │      │  │          charts0.png
+│  │      │  │          charts1.png
+│  │      │  │          charts2.png
+│  │      │  │          charts3.png
+│  │      │  │          charts4.png
+│  │      │  │          charts5.png
+│  │      │  │          
+│  │      │  ├─emotion
+│  │      │  │  │  emotion.css
+│  │      │  │  │  emotion.html
+│  │      │  │  │  emotion.js
+│  │      │  │  │  
+│  │      │  │  └─images
+│  │      │  │          0.gif
+│  │      │  │          bface.gif
+│  │      │  │          cface.gif
+│  │      │  │          fface.gif
+│  │      │  │          jxface2.gif
+│  │      │  │          neweditor-tab-bg.png
+│  │      │  │          tface.gif
+│  │      │  │          wface.gif
+│  │      │  │          yface.gif
+│  │      │  │          
+│  │      │  ├─gmap
+│  │      │  │      gmap.html
+│  │      │  │      
+│  │      │  ├─help
+│  │      │  │      help.css
+│  │      │  │      help.html
+│  │      │  │      help.js
+│  │      │  │      
+│  │      │  ├─image
+│  │      │  │  │  image.css
+│  │      │  │  │  image.html
+│  │      │  │  │  image.js
+│  │      │  │  │  
+│  │      │  │  └─images
+│  │      │  │          alignicon.jpg
+│  │      │  │          bg.png
+│  │      │  │          icons.gif
+│  │      │  │          icons.png
+│  │      │  │          image.png
+│  │      │  │          progress.png
+│  │      │  │          success.gif
+│  │      │  │          success.png
+│  │      │  │          
+│  │      │  ├─insertframe
+│  │      │  │      insertframe.html
+│  │      │  │      
+│  │      │  ├─link
+│  │      │  │      link.html
+│  │      │  │      
+│  │      │  ├─map
+│  │      │  │      map.html
+│  │      │  │      show.html
+│  │      │  │      
+│  │      │  ├─music
+│  │      │  │      music.css
+│  │      │  │      music.html
+│  │      │  │      music.js
+│  │      │  │      
+│  │      │  ├─preview
+│  │      │  │      preview.html
+│  │      │  │      
+│  │      │  ├─scrawl
+│  │      │  │  │  scrawl.css
+│  │      │  │  │  scrawl.html
+│  │      │  │  │  scrawl.js
+│  │      │  │  │  
+│  │      │  │  └─images
+│  │      │  │          addimg.png
+│  │      │  │          brush.png
+│  │      │  │          delimg.png
+│  │      │  │          delimgH.png
+│  │      │  │          empty.png
+│  │      │  │          emptyH.png
+│  │      │  │          eraser.png
+│  │      │  │          redo.png
+│  │      │  │          redoH.png
+│  │      │  │          scale.png
+│  │      │  │          scaleH.png
+│  │      │  │          size.png
+│  │      │  │          undo.png
+│  │      │  │          undoH.png
+│  │      │  │          
+│  │      │  ├─searchreplace
+│  │      │  │      searchreplace.html
+│  │      │  │      searchreplace.js
+│  │      │  │      
+│  │      │  ├─snapscreen
+│  │      │  │      snapscreen.html
+│  │      │  │      
+│  │      │  ├─spechars
+│  │      │  │      spechars.html
+│  │      │  │      spechars.js
+│  │      │  │      
+│  │      │  ├─table
+│  │      │  │      dragicon.png
+│  │      │  │      edittable.css
+│  │      │  │      edittable.html
+│  │      │  │      edittable.js
+│  │      │  │      edittd.html
+│  │      │  │      edittip.html
+│  │      │  │      
+│  │      │  ├─template
+│  │      │  │  │  config.js
+│  │      │  │  │  template.css
+│  │      │  │  │  template.html
+│  │      │  │  │  template.js
+│  │      │  │  │  
+│  │      │  │  └─images
+│  │      │  │          bg.gif
+│  │      │  │          pre0.png
+│  │      │  │          pre1.png
+│  │      │  │          pre2.png
+│  │      │  │          pre3.png
+│  │      │  │          pre4.png
+│  │      │  │          
+│  │      │  ├─video
+│  │      │  │  │  video.css
+│  │      │  │  │  video.html
+│  │      │  │  │  video.js
+│  │      │  │  │  
+│  │      │  │  └─images
+│  │      │  │          bg.png
+│  │      │  │          center_focus.jpg
+│  │      │  │          file-icons.gif
+│  │      │  │          file-icons.png
+│  │      │  │          icons.gif
+│  │      │  │          icons.png
+│  │      │  │          image.png
+│  │      │  │          left_focus.jpg
+│  │      │  │          none_focus.jpg
+│  │      │  │          progress.png
+│  │      │  │          right_focus.jpg
+│  │      │  │          success.gif
+│  │      │  │          success.png
+│  │      │  │          
+│  │      │  ├─webapp
+│  │      │  │      webapp.html
+│  │      │  │      
+│  │      │  └─wordimage
+│  │      │          fClipboard_ueditor.swf
+│  │      │          imageUploader.swf
+│  │      │          tangram.js
+│  │      │          wordimage.html
+│  │      │          wordimage.js
+│  │      │          
+│  │      ├─lang
+│  │      │  ├─en
+│  │      │  │  │  en.js
+│  │      │  │  │  
+│  │      │  │  └─images
+│  │      │  │          addimage.png
+│  │      │  │          alldeletebtnhoverskin.png
+│  │      │  │          alldeletebtnupskin.png
+│  │      │  │          background.png
+│  │      │  │          button.png
+│  │      │  │          copy.png
+│  │      │  │          deletedisable.png
+│  │      │  │          deleteenable.png
+│  │      │  │          listbackground.png
+│  │      │  │          localimage.png
+│  │      │  │          music.png
+│  │      │  │          rotateleftdisable.png
+│  │      │  │          rotateleftenable.png
+│  │      │  │          rotaterightdisable.png
+│  │      │  │          rotaterightenable.png
+│  │      │  │          upload.png
+│  │      │  │          
+│  │      │  └─zh-cn
+│  │      │      │  zh-cn.js
+│  │      │      │  
+│  │      │      └─images
+│  │      │              copy.png
+│  │      │              localimage.png
+│  │      │              music.png
+│  │      │              upload.png
+│  │      │              
+│  │      ├─php
+│  │      │      action_crawler.php
+│  │      │      action_list.php
+│  │      │      action_upload.php
+│  │      │      config.json
+│  │      │      controller.php
+│  │      │      Uploader.class.php
+│  │      │      
+│  │      ├─themes
+│  │      │  │  iframe.css
+│  │      │  │  
+│  │      │  └─default
+│  │      │      │  dialogbase.css
+│  │      │      │  
+│  │      │      ├─css
+│  │      │      │      ueditor.css
+│  │      │      │      ueditor.min.css
+│  │      │      │      
+│  │      │      └─images
+│  │      │              anchor.gif
+│  │      │              arrow.png
+│  │      │              arrow_down.png
+│  │      │              arrow_up.png
+│  │      │              button-bg.gif
+│  │      │              cancelbutton.gif
+│  │      │              charts.png
+│  │      │              cursor_h.gif
+│  │      │              cursor_h.png
+│  │      │              cursor_v.gif
+│  │      │              cursor_v.png
+│  │      │              dialog-title-bg.png
+│  │      │              fileScan.png
+│  │      │              highlighted.gif
+│  │      │              icons-all.gif
+│  │      │              icons.gif
+│  │      │              icons.png
+│  │      │              loaderror.png
+│  │      │              loading.gif
+│  │      │              lock.gif
+│  │      │              neweditor-tab-bg.png
+│  │      │              pagebreak.gif
+│  │      │              scale.png
+│  │      │              sortable.png
+│  │      │              spacer.gif
+│  │      │              sparator_v.png
+│  │      │              table-cell-align.png
+│  │      │              tangram-colorpicker.png
+│  │      │              toolbar_bg.png
+│  │      │              unhighlighted.gif
+│  │      │              upload.png
+│  │      │              videologo.gif
+│  │      │              word.gif
+│  │      │              wordpaste.png
+│  │      │              
+│  │      ├─third-party
+│  │      │  │  jquery-1.10.2.js
+│  │      │  │  jquery-1.10.2.min.js
+│  │      │  │  jquery-1.10.2.min.map
+│  │      │  │  
+│  │      │  ├─codemirror
+│  │      │  │      codemirror.css
+│  │      │  │      codemirror.js
+│  │      │  │      
+│  │      │  ├─highcharts
+│  │      │  │  │  highcharts-more.js
+│  │      │  │  │  highcharts-more.src.js
+│  │      │  │  │  highcharts.js
+│  │      │  │  │  highcharts.src.js
+│  │      │  │  │  
+│  │      │  │  ├─adapters
+│  │      │  │  │      mootools-adapter.js
+│  │      │  │  │      mootools-adapter.src.js
+│  │      │  │  │      prototype-adapter.js
+│  │      │  │  │      prototype-adapter.src.js
+│  │      │  │  │      standalone-framework.js
+│  │      │  │  │      standalone-framework.src.js
+│  │      │  │  │      
+│  │      │  │  ├─modules
+│  │      │  │  │      annotations.js
+│  │      │  │  │      annotations.src.js
+│  │      │  │  │      canvas-tools.js
+│  │      │  │  │      canvas-tools.src.js
+│  │      │  │  │      data.js
+│  │      │  │  │      data.src.js
+│  │      │  │  │      drilldown.js
+│  │      │  │  │      drilldown.src.js
+│  │      │  │  │      exporting.js
+│  │      │  │  │      exporting.src.js
+│  │      │  │  │      funnel.js
+│  │      │  │  │      funnel.src.js
+│  │      │  │  │      heatmap.js
+│  │      │  │  │      heatmap.src.js
+│  │      │  │  │      map.js
+│  │      │  │  │      map.src.js
+│  │      │  │  │      no-data-to-display.js
+│  │      │  │  │      no-data-to-display.src.js
+│  │      │  │  │      
+│  │      │  │  └─themes
+│  │      │  │          dark-blue.js
+│  │      │  │          dark-green.js
+│  │      │  │          gray.js
+│  │      │  │          grid.js
+│  │      │  │          skies.js
+│  │      │  │          
+│  │      │  ├─snapscreen
+│  │      │  │      UEditorSnapscreen.exe
+│  │      │  │      
+│  │      │  ├─SyntaxHighlighter
+│  │      │  │      shCore.js
+│  │      │  │      shCoreDefault.css
+│  │      │  │      
+│  │      │  ├─video-js
+│  │      │  │  │  video-js.css
+│  │      │  │  │  video-js.min.css
+│  │      │  │  │  video-js.swf
+│  │      │  │  │  video.dev.js
+│  │      │  │  │  video.js
+│  │      │  │  │  
+│  │      │  │  └─font
+│  │      │  │          vjs.eot
+│  │      │  │          vjs.svg
+│  │      │  │          vjs.ttf
+│  │      │  │          vjs.woff
+│  │      │  │          
+│  │      │  ├─webuploader
+│  │      │  │      Uploader.swf
+│  │      │  │      webuploader.css
+│  │      │  │      webuploader.custom.js
+│  │      │  │      webuploader.custom.min.js
+│  │      │  │      webuploader.flashonly.js
+│  │      │  │      webuploader.flashonly.min.js
+│  │      │  │      webuploader.html5only.js
+│  │      │  │      webuploader.html5only.min.js
+│  │      │  │      webuploader.js
+│  │      │  │      webuploader.min.js
+│  │      │  │      webuploader.withoutimage.js
+│  │      │  │      webuploader.withoutimage.min.js
+│  │      │  │      
+│  │      │  └─zeroclipboard
+│  │      │          ZeroClipboard.js
+│  │      │          ZeroClipboard.min.js
+│  │      │          ZeroClipboard.swf
+│  │      │          
+│  │      └─_examples
+│  │          │  addCustomizeButton.js
+│  │          │  addCustomizeCombox.js
+│  │          │  addCustomizeDialog.js
+│  │          │  charts.html
+│  │          │  completeDemo.html
+│  │          │  customizeDialogPage.html
+│  │          │  customizeToolbarUIDemo.html
+│  │          │  customPluginDemo.html
+│  │          │  customToolbarDemo.html
+│  │          │  editor_api.js
+│  │          │  filterRuleDemo.html
+│  │          │  highlightDemo.html
+│  │          │  index.html
+│  │          │  jqueryCompleteDemo.html
+│  │          │  jqueryValidation.html
+│  │          │  multiDemo.html
+│  │          │  multiEditorWithOneInstance.html
+│  │          │  renderInTable.html
+│  │          │  resetDemo.html
+│  │          │  sectiondemo.html
+│  │          │  setWidthHeightDemo.html
+│  │          │  simpleDemo.html
+│  │          │  sortableDemo.html
+│  │          │  submitFormDemo.html
+│  │          │  textareaDemo.html
+│  │          │  uparsedemo.html
+│  │          │  
+│  │          └─server
+│  │                  getContent.ashx
+│  │                  getContent.asp
+│  │                  getContent.jsp
+│  │                  getContent.php
+│  │                  
+│  ├─templates
+│  │      ueditor.html
+│  │      ueditor_old.html
+│  │      
+│  └─__pycache__
+│          commands.cpython-36.pyc
+│          models.cpython-36.pyc
+│          settings.cpython-36.pyc
+│          urls.cpython-36.pyc
+│          utils.cpython-36.pyc
+│          views.cpython-36.pyc
+│          widgets.cpython-36.pyc
+│          __init__.cpython-36.pyc
+│          
+├─life
+│  │  admin.py
+│  │  apps.py
+│  │  models.py
+│  │  tests.py
+│  │  views.py
+│  │  __init__.py
+│  │  
+│  ├─migrations
+│  │  │  0001_initial.py
+│  │  │  0002_auto_20170410_2133.py
+│  │  │  0003_auto_20170410_2140.py
+│  │  │  0004_auto_20170410_2146.py
+│  │  │  0005_auto_20170411_1541.py
+│  │  │  0006_auto_20170414_0114.py
+│  │  │  0007_auto_20170416_2003.py
+│  │  │  __init__.py
+│  │  │  
+│  │  └─__pycache__
+│  │          0001_initial.cpython-36.pyc
+│  │          0002_auto_20170410_2133.cpython-36.pyc
+│  │          0003_auto_20170410_2140.cpython-36.pyc
+│  │          0004_auto_20170410_2146.cpython-36.pyc
+│  │          0005_auto_20170411_1541.cpython-36.pyc
+│  │          0006_auto_20170414_0114.cpython-36.pyc
+│  │          0007_auto_20170416_2003.cpython-36.pyc
+│  │          __init__.cpython-36.pyc
+│  │          
+│  ├─static
+│  │  ├─life_css
+│  │  │      life.css
+│  │  │      
+│  │  ├─life_img
+│  │  └─life_js
+│  ├─templates
+│  │  └─life
+│  │          life.html
+│  │          
+│  └─__pycache__
+│          admin.cpython-36.pyc
+│          models.cpython-36.pyc
+│          __init__.cpython-36.pyc
+│          
+├─lit
+│  │  admin.py
+│  │  apps.py
+│  │  models.py
+│  │  tests.py
+│  │  views.py
+│  │  __init__.py
+│  │  
+│  ├─migrations
+│  │  │  0001_initial.py
+│  │  │  0002_auto_20170410_2204.py
+│  │  │  0003_auto_20170411_1541.py
+│  │  │  0004_auto_20170414_0121.py
+│  │  │  0005_auto_20170416_2104.py
+│  │  │  __init__.py
+│  │  │  
+│  │  └─__pycache__
+│  │          0001_initial.cpython-36.pyc
+│  │          0002_auto_20170410_2204.cpython-36.pyc
+│  │          0003_auto_20170411_1541.cpython-36.pyc
+│  │          0004_auto_20170414_0121.cpython-36.pyc
+│  │          0005_auto_20170416_2104.cpython-36.pyc
+│  │          __init__.cpython-36.pyc
+│  │          
+│  ├─static
+│  │  ├─lit_css
+│  │  │      lit.css
+│  │  │      
+│  │  ├─lit_img
+│  │  └─lit_js
+│  ├─templates
+│  │  └─lit
+│  │          lit.html
+│  │          
+│  └─__pycache__
+│          admin.cpython-36.pyc
+│          models.cpython-36.pyc
+│          __init__.cpython-36.pyc
+│          
+├─media
+│  ├─life
+│  │  └─images
+│  │          snipaste20170412_173419.png
+│  │          snipaste20170412_173604.png
+│  │          snipaste20170412_173840.png
+│  │          snipaste20170412_174158.png
+│  │          snipaste20170412_174158_ly4rSu9.png
+│  │          snipaste20170412_174928.png
+│  │          snipaste20170412_174928_FjSnEXW.png
+│  │          snipaste20170412_175154.png
+│  │          snipaste20170412_175332.png
+│  │          snipaste20170412_175332_p2h9Ljb.png
+│  │          snipaste20170412_195756.png
+│  │          snipaste20170413_184455.png
+│  │          snipaste20170413_184620.png
+│  │          snipaste20170413_184849.png
+│  │          snipaste20170413_205030.png
+│  │          snipaste20170414_133242.png
+│  │          snipaste20170414_145127.png
+│  │          snipaste20170414_150626.png
+│  │          snipaste20170414_150830.png
+│  │          snipaste20170414_151202.png
+│  │          snipaste20170414_151605.png
+│  │          snipaste20170416_201704.png
+│  │          snipaste20170416_203124.png
+│  │          snipaste20170416_203929.png
+│  │          snipaste20170416_204754.png
+│  │          snipaste20170416_204857.png
+│  │          snipaste20170417_021830.png
+│  │          snipaste20170417_021944.png
+│  │          
+│  ├─music
+│  │  ├─audios
+│  │  │      Adele_-_Ill_Be_Waiting.mp3
+│  │  │      Adele_-_Rolling_In_The_Deep.mp3
+│  │  │      Doctor_Vox_-_Frontier.mp3
+│  │  │      Energy_Drink_-_Virtual_Riot.mp3
+│  │  │      Gotta_Be_Somebody_-_Nickelback.mp3
+│  │  │      Tamas_Wells_-_Valder_Fields.mp3
+│  │  │      
+│  │  ├─content_images
+│  │  └─images
+│  │          snipaste20170412_175332.png
+│  │          snipaste20170412_195948.png
+│  │          snipaste20170412_200111.png
+│  │          snipaste20170413_184620.png
+│  │          snipaste20170413_184733.png
+│  │          snipaste20170413_204730.png
+│  │          snipaste20170413_204730_wWMGbck.png
+│  │          snipaste20170413_204858.png
+│  │          snipaste20170414_133033.png
+│  │          snipaste20170414_133033_jbC7ln0.png
+│  │          snipaste20170414_133033_YSG5oiF.png
+│  │          snipaste20170414_133242.png
+│  │          snipaste20170414_145929.png
+│  │          snipaste20170414_150316.png
+│  │          snipaste20170414_150830.png
+│  │          snipaste20170414_151921.png
+│  │          snipaste20170414_194350.png
+│  │          snipaste20170417_022155.png
+│  │          
+│  └─travel
+│      └─images
+│              snipaste20170412_200220.png
+│              snipaste20170413_184100.png
+│              snipaste20170413_184349.png
+│              snipaste20170413_205144.png
+│              snipaste20170414_132401.png
+│              snipaste20170414_133904.png
+│              snipaste20170414_141335.png
+│              snipaste20170414_141507.png
+│              snipaste20170414_150412.png
+│              
+├─music
+│  │  admin.py
+│  │  apps.py
+│  │  models.py
+│  │  tests.py
+│  │  views.py
+│  │  __init__.py
+│  │  
+│  ├─migrations
+│  │  │  0001_initial.py
+│  │  │  0002_music_audio.py
+│  │  │  0003_auto_20170411_1541.py
+│  │  │  0004_auto_20170414_0121.py
+│  │  │  0005_auto_20170416_2104.py
+│  │  │  __init__.py
+│  │  │  
+│  │  └─__pycache__
+│  │          0001_initial.cpython-36.pyc
+│  │          0002_music_audio.cpython-36.pyc
+│  │          0003_auto_20170411_1541.cpython-36.pyc
+│  │          0004_auto_20170414_0121.cpython-36.pyc
+│  │          0005_auto_20170416_2104.cpython-36.pyc
+│  │          __init__.cpython-36.pyc
+│  │          
+│  ├─static
+│  │  ├─music_css
+│  │  │      music.css
+│  │  │      
+│  │  ├─music_img
+│  │  └─music_js
+│  ├─templates
+│  │  └─music
+│  │          music.html
+│  │          
+│  └─__pycache__
+│          admin.cpython-36.pyc
+│          models.cpython-36.pyc
+│          __init__.cpython-36.pyc
+│          
+├─recommend
+│  │  admin.py
+│  │  apps.py
+│  │  models.py
+│  │  tests.py
+│  │  views.py
+│  │  __init__.py
+│  │  
+│  ├─migrations
+│  │  │  __init__.py
+│  │  │  
+│  │  └─__pycache__
+│  │          __init__.cpython-36.pyc
+│  │          
+│  ├─static
+│  │  ├─recommend_css
+│  │  │      recommend.css
+│  │  │      
+│  │  ├─recommend_img
+│  │  └─recommend_js
+│  ├─templates
+│  │  └─recommend
+│  │          recommend.html
+│  │          
+│  └─__pycache__
+│          admin.cpython-36.pyc
+│          models.cpython-36.pyc
+│          __init__.cpython-36.pyc
+│          
+├─slowlife
+│  │  settings.py
+│  │  urls.py
+│  │  wsgi.py
+│  │  __init__.py
+│  │  
+│  └─__pycache__
+│          settings.cpython-36.pyc
+│          urls.cpython-36.pyc
+│          wsgi.cpython-36.pyc
+│          __init__.cpython-36.pyc
+│          
+├─talk
+│  │  admin.py
+│  │  apps.py
+│  │  models.py
+│  │  tests.py
+│  │  views.py
+│  │  __init__.py
+│  │  
+│  ├─migrations
+│  │  │  __init__.py
+│  │  │  
+│  │  └─__pycache__
+│  │          __init__.cpython-36.pyc
+│  │          
+│  ├─static
+│  │  ├─talk_css
+│  │  │      talk.css
+│  │  │      
+│  │  ├─talk_img
+│  │  └─talk_js
+│  ├─templates
+│  │  └─talk
+│  │          talk.html
+│  │          
+│  └─__pycache__
+│          admin.cpython-36.pyc
+│          models.cpython-36.pyc
+│          __init__.cpython-36.pyc
+│          
+├─travel
+│  │  admin.py
+│  │  apps.py
+│  │  models.py
+│  │  tests.py
+│  │  views.py
+│  │  __init__.py
+│  │  
+│  ├─migrations
+│  │  │  0001_initial.py
+│  │  │  0002_auto_20170410_2204.py
+│  │  │  0003_auto_20170411_1541.py
+│  │  │  0004_auto_20170414_0121.py
+│  │  │  0005_auto_20170416_2104.py
+│  │  │  __init__.py
+│  │  │  
+│  │  └─__pycache__
+│  │          0001_initial.cpython-36.pyc
+│  │          0002_auto_20170410_2204.cpython-36.pyc
+│  │          0003_auto_20170411_1541.cpython-36.pyc
+│  │          0004_auto_20170414_0121.cpython-36.pyc
+│  │          0005_auto_20170416_2104.cpython-36.pyc
+│  │          __init__.cpython-36.pyc
+│  │          
+│  ├─static
+│  │  ├─travel_css
+│  │  │      travel.css
+│  │  │      
+│  │  ├─travel_img
+│  │  └─travel_js
+│  ├─templates
+│  │  └─travel
+│  │          travel.html
+│  │          
+│  └─__pycache__
+│          admin.cpython-36.pyc
+│          models.cpython-36.pyc
+│          __init__.cpython-36.pyc
+│          
+└─whole
+    │  admin.py
+    │  apps.py
+    │  deHTML.py
+    │  forms.py
+    │  models.py
+    │  tests.py
+    │  views.py
+    │  __init__.py
+    │  
+    ├─migrations
+    │  │  0001_initial.py
+    │  │  0002_auto_20170415_2114.py
+    │  │  0003_auto_20170416_1442.py
+    │  │  0004_auto_20170416_1724.py
+    │  │  __init__.py
+    │  │  
+    │  └─__pycache__
+    │          0001_initial.cpython-36.pyc
+    │          0002_auto_20170415_2114.cpython-36.pyc
+    │          0003_auto_20170416_1442.cpython-36.pyc
+    │          0004_auto_20170416_1724.cpython-36.pyc
+    │          __init__.cpython-36.pyc
+    │          
+    └─__pycache__
+            admin.cpython-36.pyc
+            deHTML.cpython-36.pyc
+            forms.cpython-36.pyc
+            models.cpython-36.pyc
+            views.cpython-36.pyc
+            __init__.cpython-36.pyc
+            

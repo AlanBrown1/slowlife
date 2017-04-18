@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>慢生活 - 慢下来，静下心，发现身边的美。</title>
+	<meta charset="utf-8" />
+	{% load staticfiles %}
+	<!-- 搜索引擎搜索词 -->
+	<meta name="keywords" content="慢生活, 慢旅行, 慢音乐, 慢文学, 慢话题, 快生活, 慢推荐, 猫猫慢递" />
+	<!-- 网站描述 -->
+	<meta name="description" content="慢生活, 慢旅行, 慢音乐, 慢文学, 慢话题, 快生活, 慢推荐, 猫猫慢递">
+	<!-- 网站作者Alan Brown -->
+	<meta name="author" content="Alan Brown.">
+
+	<!-- 收藏夹图标 -->
+	<link href="{% static 'img/headerimg/web_icon.png'%}" rel="bookmark" type="image/x-icon" />
+	<!-- 网址前面的图标 -->
+	<link href="{% static 'img/headerimg/web_icon.png'%}" rel="shortcut icon" type="image/x-icon" /> 
+
+	<link rel="stylesheet" type="text/css" href="{% static 'css/base_sub_page.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/material-scrolltop.css' %}">
+	
+	<!-- <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script> -->
+
+	<style type="text/css">
+		body {
+			background-color: #f2f1ef;
+		}
+	</style>
+</head>
+<body>
+<!-- 头部header -->
+<header>
+	{% include 'header.html' %}
+</header>
+<div style="height: 5px;"></div>
+
+<!-- 文章（分为左边sub_page_left.html和右边page_right.html） -->
+<div id="base_sub_page">
+	<div id="base_sub_page_mid">
+		<div id="base_sub_page_left">
+			{% include 'sub_page_left.html'%}
+		</div>
+		<div id="base_main_page_right">
+			{% include 'page_right.html' %}
+		</div>
+	</div>
+</div>
+
+<!-- 页脚footer -->
+<div style="clear: both;">
+{% include 'footer.html' %}	
+</div>
+
+<button class="material-scrolltop" type="button" style="cursor: pointer;"></button>
+
+<script type="text/javascript" src="{% static 'js/material-scrolltop.js' %}"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var navname = '{{ navname|safe }}';
+		$("#page-left-article-topic").html(navname);
+
+		var imgname = '';
+		var showname ='';
+		if(navname=='food'){
+			imgname = "{% static 'img/pageimg/meishi.png' %}";
+			showname = '美食';
+		}else if(navname=='creation'){
+			imgname = "{% static 'img/pageimg/chuangyi.png' %}";
+			showname = '创意';
+		}else if(navname=='pet'){
+			imgname = "{% static 'img/pageimg/mengchong.png' %}";
+			showname = '萌宠';
+		}else if(navname=='health'){
+			imgname = "{% static 'img/pageimg/jiankang.png' %}";
+			showname = '健康';
+		}else if(navname=='emotion'){
+			imgname = "{% static 'img/pageimg/qinggan.png' %}";
+			showname = '情感';
+		}else if(navname=='flower'){
+			imgname = "{% static 'img/pageimg/huacao.png' %}";
+			showname = '花草';
+		}else if(navname=='recommend'){
+			imgname = "{% static 'img/pageimg/yinyue.png' %}";
+			showname = '推荐';
+		}else if(navname=='singer'){
+			imgname = "{% static 'img/pageimg/geshou.png' %}";
+			showname = '歌手';
+		}else if(navname=='album'){
+			imgname = "{% static 'img/pageimg/zhuanji.png' %}";
+			showname = '专辑';
+		}else if(navname=='category'){
+			imgname = "{% static 'img/pageimg/leixing.png' %}";
+			showname = '类型';
+		}else if(navname=='mood'){
+			imgname = "{% static 'img/pageimg/xinqing.png' %}";
+			showname = '心情';
+		}else if(navname=='photography'){
+			imgname = "{% static 'img/pageimg/sheying.png' %}";
+			showname = '摄影';
+		}else if(navname=='scene'){
+			imgname = "{% static 'img/pageimg/jingdian.png' %}";
+			showname = '景点';
+		}else if(navname=='record'){
+			imgname = "{% static 'img/pageimg/jilu.png' %}";
+			showname = '记录';
+		}else if(navname=='strategy'){
+			imgname = "{% static 'img/pageimg/gonglue.png' %}";
+			showname = '攻略';
+		}else if(navname=='hotel'){
+			imgname = "{% static 'img/pageimg/yizhan.png' %}";
+			showname = '驿站';
+		}else if(navname=='famous'){
+			imgname = "{% static 'img/pageimg/mingzhu.png' %}";
+			showname = '名著';
+		}else if(navname=='fineart'){
+			imgname = "{% static 'img/pageimg/meiwen.png' %}";
+			showname = '美文';
+		}else if(navname=='poem'){
+			imgname = "{% static 'img/pageimg/shici.png' %}";
+			showname = '诗词';
+		}else if(navname=='pillowbook'){
+			imgname = "{% static 'img/pageimg/zhenshu.png' %}";
+			showname = '枕书';
+		}else if(navname=='essay'){
+			imgname = "{% static 'img/pageimg/suibi.png' %}";
+			showname = '随笔';
+		}
+		$("#page-left-photo img").attr('src', imgname);
+		$("#page-left-article-topic").text(showname);
+
+
+
+		// 回到顶部
+		$('body').materialScrollTop({
+		    revealElement: 'header',
+		    revealPosition: 'bottom',
+		    // padding: 200,
+		    onScrollEnd: function() {
+		        console.log('Scrolling End');
+		    }
+		});
+	});
+</script>
+
+</body>
+</html>

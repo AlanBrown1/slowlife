@@ -1,0 +1,175 @@
+/* ************** 总体样式 ************/
+
+body {
+	margin: 0px;
+}
+
+#life {
+	height: 397px;
+	width: 493px;
+	margin-right: 10px;
+	border-radius: 10px;
+}
+
+#life p {
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+#life a {
+	text-decoration: none;
+	/*color: #fff;*/
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+
+#life ul {
+	list-style-type: none;
+}
+
+/* ************** 上部样式 ************/
+
+#life-up {
+	height: 35px;
+	width: 100%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: #666699;
+}
+
+#life-up-left {
+	display: inline-block;
+	height: 35px;
+	width: 70px;
+	line-height: 35px;
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+}
+
+#life-up-right {
+	display: inline-block;
+	height: 35px;
+	width: 400px;
+	line-height: 35px;
+	font-size: 12px;
+}
+
+#life-up-right ul {
+	list-style-type: none;
+	margin: 0px;
+	padding-left: 0px;
+}
+
+#life-up-right ul li {
+	display: inline-block;
+	line-height: 25px;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+#life-up-right ul li a:link, #life-up-right ul li a:visited  {
+	display: inline-block;
+	height: 23px;
+	width: 50px;
+	color: #fff;
+	text-align: center;
+	border-radius: 5px;
+}
+
+#life-up-right ul li a:hover {
+	background-color: #FF9999;
+}
+
+/* ************** 下部样式 ************/
+
+#life-down {
+	height: 340px;
+	width: 100%;
+	padding: 5px 10px 10px 0px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.life-downdiv {
+	height: 170px;
+	width: 100%;
+}
+
+#life-downdiv1 {
+	margin-bottom: 10px;
+}
+
+.life-downimg {
+	float: left;
+	height: 170px;
+	width: 130px;
+	background-color: #fff;
+}
+
+.life-downimg img {
+	height: 100%;
+	width: 100%;
+}
+
+.life-downtext {
+	float: right;
+	height: 170px;
+	width: 350px;
+	margin-left: 3px;
+}
+
+.life-downtext_col {
+	height: 52px;
+	width: 345px;
+	overflow: hidden;
+	border: 1px solid #999;
+	border-radius: 5px;
+	padding-left: 3px;
+}
+
+.life-col {
+	margin-bottom: 4px;
+}
+
+.life-downtext-img {
+	float: left;
+	height: 46px;
+	width: 35px;
+	margin-top: 3px;
+	background-color: #fff;
+}
+
+.life-downtext-img img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.life-downtext-text {
+	float: left;
+	margin-left: 5px;
+	width: 300px;
+}
+
+.life-topic {
+	font-size: 15px;
+	color: #99CC66;
+	font-weight: bold;
+	display: block;
+	width: 100%
+	height: 20px;
+	overflow: hidden;
+}
+
+.life-cont {
+	display: inline-block;
+	width: 100%;
+	height: 30px;
+	font-size: 12px;
+	color: #000;
+	line-height: 30px;
+	overflow: hidden;
+	margin-top: 2px;
+}

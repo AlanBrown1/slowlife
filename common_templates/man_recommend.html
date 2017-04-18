@@ -1,0 +1,119 @@
+{% load staticfiles %}
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/man_recommend.css' %}">
+
+<div id="manrecom">
+	<div id="manrecom-photo">
+		<img src="{% static 'img/manrecommend.png' %}">
+	</div>
+
+	<div id="manrecom-blankdiv"></div>
+
+	<div id="manrecom-content">
+		<!-- 慢生活 -->
+		<div class="manrecom-col">
+			<div class="manrecom-coltopic">慢生活</div>
+			<div class="manrecom-body">
+
+				<div class="manrecom-body-two manrecom-body-two1" >
+					<div class="manrecom-img">
+						<img src="{% if man_life1.image %} {{ man_life1.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+					</div>
+					<div class="manrecom-text">
+						<div class="manrecom-text-topic"><a href="{% url 'article' 'life' man_life1.id %}">{{ man_life1.title }}</a></div>
+						<div class="manrecom-text-content">{{ man_life1.content }}</div>
+					</div>
+				</div>
+				<div class="manrecom-body-two" >
+					<div class="manrecom-img">
+						<img src="{% if man_life2.image %} {{ man_life2.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+					</div>
+					<div class="manrecom-text">
+						<div class="manrecom-text-topic"><a href="{% url 'article' 'life' man_life2.id %}">{{ man_life2.title }}</a></div>
+						<div class="manrecom-text-content">{{ man_life2.content }}</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="manrecom-col">
+			<div class="manrecom-coltopic">慢音乐</div>
+			<div class="manrecom-body">
+
+				<div class="manrecom-body-two manrecom-body-two1" >
+					<div class="manrecom-img">
+						<img src="{% if man_music1.image %} {{ man_music1.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+					</div>
+					<div class="manrecom-text">
+						<div class="manrecom-text-topic"><a href="{% url 'article' 'music' man_music1.id %}">{{ man_music1.title }}</a></div>
+						<div class="manrecom-text-content">{{ man_music1.content }}</div>
+					</div>
+				</div>
+				<div class="manrecom-body-two" >
+					<div class="manrecom-img">
+						<img src="{% if man_music2.image %} {{ man_music2.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+					</div>
+					<div class="manrecom-text">
+						<div class="manrecom-text-topic"><a href="{% url 'article' 'music' man_music2.id %}">{{ man_life2.title }}</a></div>
+						<div class="manrecom-text-content">{{ man_music2.content }}</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="manrecom-col">
+			<div class="manrecom-coltopic">慢旅行</div>
+			<div class="manrecom-body">
+				
+				<div class="manrecom-body-two manrecom-body-two1" >
+					<div class="manrecom-img">
+						<img src="{% if man_travel1.image %} {{ man_travel1.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+					</div>
+					<div class="manrecom-text">
+						<div class="manrecom-text-topic"><a href="{% url 'article' 'travel' man_travel1.id %}">{{ man_travel1.title }}</a></div>
+						<div class="manrecom-text-content">{{ man_travel1.content }}</div>
+					</div>
+				</div>
+				<div class="manrecom-body-two" >
+					<div class="manrecom-img">
+						<img src="{% if man_travel2.image %} {{ man_travel2.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+					</div>
+					<div class="manrecom-text">
+						<div class="manrecom-text-topic"><a href="{% url 'article' 'travel' man_travel2.id %}">{{ man_travel2.title }}</a></div>
+						<div class="manrecom-text-content">{{ man_travel2.content }}</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="manrecom-col">
+			<div class="manrecom-coltopic">慢文学</div>
+			<div class="manrecom-body">
+				
+				<div class="manrecom-body-two manrecom-body-two1" >
+					<div class="manrecom-img">
+						<img src="{% if man_lit1.image %} {{ man_lit1.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+					</div>
+					<div class="manrecom-text">
+						<div class="manrecom-text-topic"><a href="{% url 'article' 'lit' man_lit1.id %}">{{ man_lit1.title }}</a></div>
+						<div class="manrecom-text-content">{{ man_lit1.content }}</div>
+					</div>
+				</div>
+				<div class="manrecom-body-two" >
+					<div class="manrecom-img">
+						<img src="{% if man_lit2.image %} {{ man_lit2.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+					</div>
+					<div class="manrecom-text">
+						<div class="manrecom-text-topic"><a href="{% url 'article' 'lit' man_lit2.id %}">{{ man_lit2.title }}</a></div>
+						<div class="manrecom-text-content">{{ man_lit2.content }}</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+</div>

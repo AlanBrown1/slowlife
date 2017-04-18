@@ -1,0 +1,93 @@
+.foo-col p {
+	font-size: 10px;
+	color: #999999;
+
+}
+
+.foo-col a:link, .foo-col a:visited {
+	color: #666666;
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+	text-decoration: none;
+	font-size: 10px;
+}
+.foo-col a:hover {
+	color: #99CC00;
+}
+
+.foo-col a:active {
+	color: #FF6666;
+}
+
+#footer {
+	height: 200px;
+	background-color: #333333;
+	padding-top: 20px;
+}
+
+#footermid {
+	height: 160px;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.tp {
+	font-size: 10px;
+}
+
+.foo-col {
+	height: 160px;
+	width: 210px;
+	float: left;
+	margin: 0 10px 0 10px;
+	border-left: 1px solid #666666;
+	padding-left: 10px;	
+	border-radius: 10px;
+}
+
+.tp {
+	font-size: 10px;
+}
+
+#copyright {
+	clear: all;
+	height: 20px;
+	margin-top: 10px;
+}
+
+#copyright div {
+	width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#copyright p {
+	color: #999999;
+	font-size: 12px;
+}
+
+#copyright a {
+	color: #999999;
+	font-size: 13px;
+	text-decoration: none;
+}
+
+#copyright a:hover {
+	color: #99CC00;
+}
+
+.foo-col a {
+	display: inline-block;
+	width: 85px;
+	height: 30px;
+	line-height: 30px;
+	text-align: left;
+	border-radius: 5px;
+	padding: 0px 0 0 0;
+}
+
+.footer-img {
+	height: 16px;
+	width: 16px;
+	vertical-align: middle;
+	margin-right: 5px;
+}

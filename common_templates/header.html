@@ -1,0 +1,105 @@
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/header.css' %}">
+<!-- <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script> -->
+<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/nav.js' %}"></script>
+
+<div class="header-up">
+	<div class="header-upmid">
+		<!-- 网站图标和注册登录按钮 -->
+		<div class="header-img">
+			<a href="{% url 'home' %}">
+				<img src="{% static 'img/headerimg/icon.png'%}">
+			</a>
+		</div>
+		<img class="header-upp" src="{% static 'img/headerimg/icon_p.png'%}">
+		<!-- <div class="header-reglog">
+			<a class="header-reg" href="">注册</a>
+			<a class="header-log" href="">登录</a>
+		</div> -->
+		<div id="header-offer-contact">
+			<div id="header-offer"><a href="{% url 'aboutus' 'aboutus-offer-article' %}">提供稿件</a></div>
+			<div id="header-contact">
+				<span>关注慢生活 :</span>
+				<div id="header-contact-ul">
+				<ul>
+					<li><a href="#"><img src="{% static 'img/footerimg/xinlang.png'%}" title="新浪微博"></a></li>
+					<li><a href="#"><img src="{% static 'img/footerimg/weixin.png'%}" title="微信公众号"></a></li>
+					<li><a href="#"><img src="{% static 'img/footerimg/facebook.png'%}" title="facebook"></a></li>
+					<li><a href="#"><img src="{% static 'img/footerimg/twitter.png'%}" title="twitter"></a></li>
+					<li><a href="#"><img src="{% static 'img/footerimg/instagram.png'%}" title="Instagram"></a></li>
+				</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div id="top_bg">
+	<div class="top">
+		<!--导航开始-->
+		<div class="nav_z">
+			<ul id="navul" class="cl">
+				<!--可在此处直接添加导航-->
+				<li class="header-li"><a href="{% url 'home' %}">首页</a></li>
+				<li class="header-li">
+					<a href="{% url 'mainpage' 'life' 'p1' %}">慢生活</a>				
+					<ul>
+						<li class="header-li"><a href="{% url 'subpage' 'food' 'p1' %}">美&nbsp&nbsp食</a></li>
+						<li class="header-li"><a href="{% url 'subpage' 'creation' 'p1' %}">创&nbsp&nbsp意</a></li>
+						<li class="header-li"><a href="{% url 'subpage' 'pet' 'p1' %}">萌&nbsp&nbsp宠</a></li>
+						<li class="header-li"><a href="{% url 'subpage' 'health' 'p1' %}">健&nbsp&nbsp康</a></li>
+						<li class="header-li"><a href="{% url 'subpage' 'emotion' 'p1' %}">情&nbsp&nbsp感</a></li>
+						<li class="header-li"><a href="{% url 'subpage' 'flower' 'p1' %}">花&nbsp&nbsp草</a></li>
+					</ul>
+				</li>
+
+				<li class="header-li">
+					<a href="{% url 'mainpage' 'music' 'p1' %}">慢音乐</a>
+					<ul>
+						<li class="header-li"><a href="{% url 'subpage' 'recommend' 'p1' %}">推&nbsp&nbsp荐</a></li>
+						<li class="header-li"><a href="{% url 'subpage' 'singer' 'p1' %}">歌&nbsp&nbsp手</a></li>
+						<li class="header-li"><a href="{% url 'subpage' 'album' 'p1' %}">专&nbsp&nbsp辑</a></li>
+						<li class="header-li"><a href="{% url 'subpage' 'category' 'p1' %}">类&nbsp&nbsp型</a></li>
+						<li class="header-li"><a href="{% url 'subpage' 'mood' 'p1' %}">心&nbsp&nbsp情</a></li>
+					</ul>
+				</li>
+
+				<li class="header-li">
+					<a href="{% url 'mainpage' 'travel' 'p1' %}">慢旅行</a>
+					<ul>
+						<li class="header-li"><a href="{% url 'subpage' 'photography' 'p1' %}">摄&nbsp&nbsp影</a></li>
+						<li class="header-li"><a href="{% url 'subpage' 'scene' 'p1' %}">景&nbsp&nbsp点</a></li>
+						<li class="header-li"><a href="{% url 'subpage' 'record' 'p1' %}">记&nbsp&nbsp录</a></li>
+						<li class="header-li"><a href="{% url 'subpage' 'strategy' 'p1' %}">攻&nbsp&nbsp略</a></li>
+						<li class="header-li"><a href="{% url 'subpage' 'hotel' 'p1' %}">驿&nbsp&nbsp站</a></li>
+					</ul>
+				</li>				
+
+				<li class="header-li">
+					<a href="{% url 'mainpage' 'lit' 'p1' %}">慢文学</a>
+					<ul>
+						<li class="header-li"><a href="{% url 'subpage' 'famous' 'p1' %}">名&nbsp&nbsp著</a></li>
+						<li class="header-li"><a href="{% url 'subpage' 'fineart' 'p1' %}">美&nbsp&nbsp文</a></li>
+						<li class="header-li"><a href="{% url 'subpage' 'poem' 'p1' %}">诗&nbsp&nbsp词</a></li>
+						<li class="header-li"><a href="{% url 'subpage' 'pillowbook' 'p1' %}">枕&nbsp&nbsp书</a></li>
+						<li class="header-li"><a href="{% url 'subpage' 'essay' 'p1' %}">随&nbsp&nbsp笔</a></li>
+
+					</ul>
+				</li>
+
+				<!-- <li class="header-li"><a href=""><a href="#">慢话题</a></a></li> -->
+				<li class="header-li">
+					<a href="{% url 'manrecommend' %}">发现美</a>
+				</li>
+				<!-- <li class="header-li"><a href=""><a href="#">猫猫慢递</a></a></li> -->
+			</ul>
+		</div><!--导航结束-->
+		<script  type="text/javascript"> 
+			$(".navbg").capacityFixed();
+		</script>
+
+	</div>
+
+</div>

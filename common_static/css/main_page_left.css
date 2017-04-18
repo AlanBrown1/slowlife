@@ -1,0 +1,156 @@
+/********** 总体 **********/
+
+body {
+	margin: 0px;
+}
+
+/************** 左边 *************/
+
+#page-left {
+	height: 100%;
+	width: 740px;
+	float: left;
+	margin-right: 10px;
+}
+
+#page-left-photo {
+	height: 300px;
+	width: 100%;
+	/* width是740px */
+	margin-bottom: 5px;
+
+}
+
+#page-left-photo img {
+	height: 100%;
+	width: 100%;
+	background-color: #fff;
+
+}
+
+#page-left-article {
+	/*height: 1750px;*/
+	width: 100%;
+}
+
+#page-left-article-topic {
+	height: 40px;
+	width: 730px;
+	padding-left: 5px;
+	line-height: 40px;
+	font-size: 18px;
+	color: #009966;
+	border-bottom: 1px solid #ccc;
+}
+
+#page-left-article-article {
+	/*height: 1710px;*/
+	width: 100%;
+}
+
+/* 文章col 开始*/
+.page-article {
+	height: 140px;
+	width: 100%;
+	padding: 15px 0 15px 0;
+	border-bottom: 1px dashed #cccccc;
+	/*background-color: #CCCCCC;*/
+}
+
+.page-article-img {
+	height: 100%;
+	width: 140px;
+	float: left;
+	margin-right: 15px;
+}
+
+.page-article-img img {
+	height: 100%;
+	width: 100%;
+	background-color: #CCCCCC;
+}
+
+.page-article-text {
+	height: 100%;
+	width: 585px;
+	float: left;
+}
+
+.page-article-topic {
+	height: 30px;
+	width: 100%;
+	line-height: 30px;
+	font-size: bold;
+	overflow: hidden;
+	color: #7dc473;
+
+}
+
+.page-article-topic a {
+	color: #7dc473;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.page-article-content {
+	height: 80px;
+	width: 100%;
+	font-size: 13px;
+	margin-top: 7px;
+	/*margin-bottom: 10px;*/
+	overflow: hidden;
+}
+
+.page-article-other {
+	height: 25px;
+	width: 100%;
+	line-height: 25px;
+	font-size: 12px;
+}
+
+.page-article-publish {
+	height: 100%;
+	width:400px;
+	float: left;
+}
+
+.page-article-like {
+	height: 100%;
+	width: 100px;
+	float: right;
+}
+
+.article-img {
+	height: 20px;
+	width: 20px;
+	float: left;
+	margin-top: 2px;
+	margin-right: 5px;
+}
+
+.article-img img {
+	display: block;
+	height: 100%;
+	width: 100%;
+	cursor: pointer;
+}
+
+.article-like {
+	height: 100%;
+	width: 65px;
+	float: left;
+}
+
+.article-like span {
+	display: inline-block;
+	line-height: 25px;
+	width: 60px;
+	text-align: center;
+	background-color: #a5d6a7;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#page-split {
+	width: 100%;
+}

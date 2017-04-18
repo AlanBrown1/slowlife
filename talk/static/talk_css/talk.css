@@ -1,0 +1,171 @@
+/* ************** 总体样式 ************/
+
+body {
+	margin: 0px;
+}
+
+#talk {
+	height: 397px;
+	width: 493px;
+	margin-top: 5px;
+	margin-right: 10px;
+	/*margin: 5px 5px 5px 0px;*/
+	border-radius: 10px;
+}
+
+#talk p {
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+#talk a {
+	text-decoration: none;
+	/*color: #fff;*/
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+
+#talk ul {
+	list-style-type: none;
+}
+
+/* ************** 上部样式 ************/
+
+#talk-up {
+	height: 35px;
+	width: 100%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: #9370db;
+}
+
+#talk-up-left {
+	display: inline-block;
+	height: 35px;
+	width: 70px;
+	line-height: 35px;
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+}
+
+#talk-up-right {
+	display: inline-block;
+	height: 35px;
+	width: 400px;
+	line-height: 35px;
+	font-size: 12px;
+}
+
+#talk-up-right ul {
+	list-style-type: none;
+	margin: 0px;
+	padding-left: 0px;
+}
+
+#talk-up-right ul li {
+	display: inline-block;
+	line-height: 25px;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+#talk-up-right ul li a:link, #talk-up-right ul li a:visited  {
+	display: inline-block;
+	height: 23px;
+	width: 50px;
+	color: #fff;
+	text-align: center;
+	border-radius: 5px;
+}
+
+#talk-up-right ul li a:hover {
+	background-color: #FF9999;
+}
+
+/* ************** 下部样式 ************/
+
+#talk-down {
+	height: 340px;
+	width: 100%;
+	padding: 5px 10px 10px 0px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.talk-downdiv {
+	height: 170px;
+	width: 100%;
+}
+
+#talk-downdiv1 {
+	margin-bottom: 10px;
+}
+
+.talk-downimg {
+	float: left;
+	height: 170px;
+	width: 130px;
+	background-color: #fff;
+}
+
+.talk-downimg img {
+	height: 100%;
+	width: 100%;
+}
+
+.talk-downtext {
+	float: right;
+	height: 170px;
+	width: 350px;
+	margin-left: 3px;
+}
+
+.talk-downtext_col {
+	height: 52px;
+	width: 345px;
+	overflow: hidden;
+	border: 1px solid #999;
+	border-radius: 5px;
+	padding-left: 3px;
+	background-color: #e9967a;
+}
+
+.talk-col {
+	margin-bottom: 4px;
+}
+
+.talk-downtext-img {
+	float: left;
+	height: 46px;
+	width: 35px;
+	margin-top: 3px;
+	background-color: #fff;
+}
+
+.talk-downtext-text {
+	float: left;
+	margin-left: 5px;
+	width: 285px;
+}
+
+.talk-topic {
+	font-size: 15px;
+	color: #000;
+	display: block;
+	width: 285px;
+	height: 20px;
+	overflow: hidden;
+}
+
+.talk-cont {
+	display: inline-block;
+	width: 285px;
+	height: 30px;
+	font-size: 12px;
+	color: #fff;
+	line-height: 15px;
+	overflow: hidden;
+	margin-top: 2px;
+}

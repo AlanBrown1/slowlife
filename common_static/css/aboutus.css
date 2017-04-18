@@ -1,0 +1,174 @@
+#aboutus {
+	/*height: 1490px;*/
+	width: 740px;
+}
+
+#aboutus p {
+	font-size: 13px;
+	margin-bottom: 5px;	
+}
+
+#aboutus a:link, #aboutus a:visited {
+	text-decoration: none;
+}
+
+/* 网站简介 */
+
+#introduce {
+	height: 420px;
+	width: 100%;
+	margin-top: 10px;
+}
+
+#intro-topic {
+	height: 30px;
+	width: 100%;
+	text-align: center;
+	line-height: 30px;
+	font-size: 18px;
+	margin-bottom: 20px;
+	background-color: #66CCCC;
+	border-radius: 5px;
+}
+
+/* 使用协议 */
+#useagreement {
+	height: 400px;
+	width: 100%;
+}
+
+#use-topic {
+	height: 30px;
+	width: 100%;
+	text-align: center;
+	line-height: 30px;
+	font-size: 18px;
+	margin-bottom: 20px;
+	background-color: #66CCCC;
+	border-radius: 5px;
+}
+
+/* 提供稿件 */
+#aboutus-offer-article {
+	height: 340px;
+	width: 100%;
+}
+
+#aboutus-offer-topic {
+	height: 30px;
+	width: 100%;
+	text-align: center;
+	line-height: 30px;
+	font-size: 18px;
+	margin-bottom: 20px;
+	background-color: #66CCCC;
+	border-radius: 5px;
+}
+
+#aboutus-offer-article span {
+	display: inline-block;
+	height: 25px;
+	width: 140px;
+	text-align: center;
+	border-radius: 3px;
+	margin-left: 2px;
+	background-color: pink;
+
+}
+
+/* 意见反馈 */
+
+#advise {
+	height: 320px;
+	width: 100%;
+}
+
+#advise-topic {
+	height: 30px;
+	width: 100%;
+	text-align: center;
+	line-height: 30px;
+	font-size: 18px;
+	margin-bottom: 20px;
+	background-color: #66CCCC;
+	border-radius: 5px;
+}
+
+#advise .selectfile {
+	background-color: #99CCFF;
+}
+
+#advise .advise-submit {
+	display: inline-block;
+	cursor: pointer;
+	height: 30px;
+	width: 70px;
+	background-color: #99CCFF;
+	border: none;
+	border-radius: 5px;
+	font-size: 15px;
+	border: none;
+
+
+}
+#typeIsValid {
+	display: none;
+	position: relative;
+	height: 30px;
+	line-height: 30px;
+	width: 400px;
+	font-size: 13px;
+	text-align: left;
+	border-radius: 3px;
+	padding-left: 15px;
+	bottom: 2px;
+	left: 15px;
+	background-color: #ffc0cb;
+}
+
+#mail {
+	display: inline-block;
+	height: 25px;
+	width: 140px;
+	text-align: center;
+	border-radius: 3px;
+	margin-left: 2px;
+	margin-right: 2px;
+	background-color: #ffc0cb;
+}
+
+#wordCount {
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	width: 160px;
+	float: right;
+	padding-right: 5px;
+	text-align: right;
+	font-size: 12px;
+}
+
+#wordRes {
+	display: inline-block;
+	height: 20px;
+	width: 35px;
+	line-height: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+	text-align: center;
+	background-color: #ffc0cb;
+	border-radius: 5px;
+}
+
+#advise-content textarea {
+	display: block;
+	resize: none;
+	width: 728px;
+	height: 150px;
+	overflow-y: visible;
+	font-size: 15px;
+	margin-bottom: 10px;
+	border: 1px solid #66cccc;
+	padding: 5px;
+	background: re
+}

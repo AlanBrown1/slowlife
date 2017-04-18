@@ -1,0 +1,188 @@
+{% load staticfiles %}
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="{% static 'lit_css/lit.css'%}">
+
+<div id="lit">
+	<div id="lit-up">
+		<div id="lit-up-left">慢文学</div>
+		<div id="lit-up-right">
+			<ul>
+				<li><a href="{% url 'subpage' 'famous' 'p1' %}">名&nbsp著</a></li>
+				<li><a href="{% url 'subpage' 'fineart' 'p1' %}">美&nbsp文</a></li>
+				<li><a href="{% url 'subpage' 'poem' 'p1' %}">诗&nbsp词</a></li>
+				<li><a href="{% url 'subpage' 'pillowbook' 'p1' %}">枕&nbsp书</a></li>
+				<li><a href="{% url 'subpage' 'essay' 'p1' %}">随&nbsp笔</a></li>
+				<li><a href="{% url 'mainpage' 'lit' 'p1' %}">更&nbsp多</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="lit-down">
+		<!-- 左边 -->
+		<div id="lit-down-left">
+			<div class="lit-downdiv">
+				<div class="lit-downimg">
+					<img src="{% if lit.famous1.image %} {{ lit.famous1.image.url }}{% else %}
+					{% static 'img/image_none.png' %} {% endif %}">
+				</div>
+				<div class="lit-downtext">
+					<!-- famous -->
+					<div class="lit-downtext_col lit-col">
+						<div class="lit-downtext-img">
+							<img src="{% if lit.famous1.image %} {{ lit.famous1.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+						</div>
+						<div class="lit-downtext-text">
+							<a href="{% url 'article' 'lit' lit.famous1.id %}" class="lit-topic">{{ lit.famous1.title}}</a>
+							<p class="lit-cont">{{ lit.famous1.content }}</p>
+						</div>
+					</div>
+					<div class="lit-downtext_col lit-col">
+						<div class="lit-downtext-img">
+							<img src="{% if lit.famous2.image %} {{ lit.famous2.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+						</div>
+						<div class="lit-downtext-text">
+							<a href="{% url 'article' 'lit' lit.famous2.id %}" class="lit-topic">{{ lit.famous2.title}}</a>
+							<p class="lit-cont">{{ lit.famous2.content }}</p>
+						</div>
+					</div>
+
+					<!-- poem1 -->
+					<div class="lit-downtext_col">
+						<div class="lit-downtext-img">
+							<img src="{% if lit.poem1.image %} {{ lit.poem1.image.url }} {% else %}{% static 'img/image_none.png' %} {% endif %}">
+						</div>
+						<div class="lit-downtext-text">
+							<a href="{% url 'article' 'lit' lit.poem1.id %}" class="lit-topic">
+								{{ lit.poem1.title }}
+							</a>
+							<p class="lit-cont">
+								{{ lit.poem1.content }}
+							<p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="lit-downdiv">
+				<div class="lit-downimg">
+					<img src="{% if lit.fineart1.image %} {{ lit.fineart1.image.url }} {% else %}{% static 'img/image_none.png' %} {% endif %}">
+				</div>
+				<div class="lit-downtext">
+					<!-- fineart -->
+					<div class="lit-downtext_col lit-col">
+						<div class="lit-downtext-img">
+							<img src="{% if lit.fineart1.image %} {{ lit.fineart1.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+						</div>
+						<div class="lit-downtext-text">
+							<a href="{% url 'article' 'lit' lit.fineart1.id %}" class="lit-topic">{{ lit.fineart1.title }}</a>
+							<p class="lit-cont">{{ lit.fineart1.content }}</p>
+						</div>
+					</div>
+					<div class="lit-downtext_col lit-col">
+						<div class="lit-downtext-img">
+							<img src="{% if lit.fineart2.image %} {{ lit.fineart2.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+						</div>
+						<div class="lit-downtext-text">
+							<a href="{% url 'article' 'lit' lit.fineart2.id %}" class="lit-topic">{{ lit.fineart2.title }}</a>
+							<p class="lit-cont">{{ lit.fineart2.content }}</p>
+						</div>
+					</div>
+					<div class="lit-downtext_col">
+						<div class="lit-downtext-img">
+							<img src="{% if lit.fineart3.image %} {{ lit.fineart3.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+						</div>
+						<div class="lit-downtext-text">
+							<a href="{% url 'article' 'lit' lit.fineart3.id %}" class="lit-topic">{{ lit.fineart3.title }}</a>
+							<p class="lit-cont">{{ lit.fineart3.content }}</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- 右边 -->
+		<div id="lit-down-right">
+			<div class="lit-downdiv">
+				<div class="lit-downimg">
+					<img src="{% if lit.pillowbook1.image %} {{ lit.pillowbook1.image.url }} {% else %}{% static 'img/image_none.png' %} {% endif %}">
+				</div>
+				<div class="lit-downtext">
+					<!-- pillowbook -->
+					<div class="lit-downtext_col lit-col">
+						<div class="lit-downtext-img">
+							<img src="{% if lit.pillowbook1.image %} {{ lit.pillowbook1.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+						</div>
+						<div class="lit-downtext-text">
+							<a href="{% url 'article' 'lit' lit.pillowbook1.id %}" class="lit-topic">{{ lit.pillowbook1.title }}</a>
+							<p class="lit-cont">{{ lit.pillowbook1.content }}</p>
+						</div>
+					</div>
+					<div class="lit-downtext_col lit-col">
+						<div class="lit-downtext-img">
+							<img src="{% if lit.pillowbook2.image %} {{ lit.pillowbook2.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+						</div>
+						<div class="lit-downtext-text">
+							<a href="{% url 'article' 'lit' lit.pillowbook2.id %}" class="lit-topic">{{ lit.pillowbook2.title }}</a>
+							<p class="lit-cont">{{ lit.pillowbook2.content }}</p>
+						</div>
+					</div>
+
+					<!-- poem2 -->
+					<div class="lit-downtext_col">
+						<div class="lit-downtext-img">
+							<img src="{% if lit.poem2.image %} {{ lit.poem2.image.url }} {% else %}{% static 'img/image_none.png' %} {% endif %}">
+						</div>
+						<div class="lit-downtext-text">
+							<a href="{% url 'article' 'lit' lit.poem2.id %}" class="lit-topic">
+								{{ lit.poem2.title }}
+							</a>
+							<p class="lit-cont">
+								{{ lit.poem2.content }}
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="lit-downdiv">
+				<div class="lit-downimg">
+					<img src="{% if lit.essay1.image %} {{ lit.essay1.image.url }} {% else %}{% static 'img/image_none.png' %} {% endif %}">
+				</div>
+				<div class="lit-downtext">
+					<!-- essay -->
+					<div class="lit-downtext_col lit-col">
+						<div class="lit-downtext-img">
+							<img src="{% if lit.essay1.image %} {{ lit.essay1.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+						</div>
+						<div class="lit-downtext-text">
+							<a href="{% url 'article' 'lit' lit.essay1.id %}" class="lit-topic">{{ lit.essay1.title }}</a>
+							<p class="lit-cont">{{ lit.essay1.content }}</p>
+						</div>
+					</div>
+					<div class="lit-downtext_col lit-col">
+						<div class="lit-downtext-img">
+							<img src="{% if lit.essay2.image %} {{ lit.essay2.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+						</div>
+						<div class="lit-downtext-text">
+							<a href="{% url 'article' 'lit' lit.essay2.id %}" class="lit-topic">{{ lit.essay2.title }}</a>
+							<p class="lit-cont">{{ lit.essay2.content }}</p>
+						</div>
+					</div>
+					<div class="lit-downtext_col">
+						<div class="lit-downtext-img">
+							<img src="{% if lit.essay3.image %} {{ lit.essay3.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+						</div>
+						<div class="lit-downtext-text">
+							<a href="{% url 'article' 'lit' lit.essay3.id %}" class="lit-topic">{{ lit.essay3.title }}</a>
+							<p class="lit-cont">{{ lit.essay3.content }}</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>

@@ -1,0 +1,90 @@
+{% load staticfiles %}
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="{% static 'recommend_css/recommend.css' %}">
+
+<div id="recommend">
+	<div id="recommend-mid">
+
+		<div id="recommend-up">
+			<div id="recommend-up-topic">发现美</div>
+			<div id="recommend-up-ul">
+				<ul>
+					<li><a href="{% url 'manrecommend' %}">更&nbsp多</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="recommend-down">
+			<div class="recommend-col recommend-column recommend-col-border1">
+				<div class="recommend-col-img">
+					<img src="{% if fa.fa_life1.image %} {{ fa.fa_life1.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+				</div>
+				<div class="recommend-col-text">
+					<div class="recommend-col-text-topic">
+						<a class="recommend-col-text-topic-link" href="{% url 'article' 'life' fa.fa_life1.id %}">{{ fa.fa_life1.title }}</a>
+					</div>
+					<div class="recommend-col-text-text">
+						{{ fa.fa_life1.content }}
+					</div>
+				</div>
+			</div>
+
+			<div class="recommend-col recommend-column">
+				<div class="recommend-col-img">
+					<img src="{% if fa.fa_life2.image %} {{ fa.fa_life2.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+				</div>
+				<div class="recommend-col-text">
+					<div class="recommend-col-text-topic">
+						<a href="{% url 'article' 'life' fa.fa_life2.id %}">{{ fa.fa_life2.title }}</a>
+					</div>
+					<div class="recommend-col-text-text">
+						{{ fa.fa_life2.content }}
+					</div>
+				</div>
+			</div>
+
+			<div class="recommend-col recommend-column">
+				<div class="recommend-col-img">
+					<img src="{% if fa.fa_music.image %} {{ fa.fa_music.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+				</div>
+				<div class="recommend-col-text">
+					<div class="recommend-col-text-topic">
+						<a href="{% url 'article' 'music' fa.fa_music.id %}">{{ fa.fa_music.title }}</a>
+					</div>
+					<div class="recommend-col-text-text">
+						{{ fa.fa_music.content }}
+					</div>
+				</div>
+			</div>
+
+			<div class="recommend-col recommend-column">
+				<div class="recommend-col-img">
+					<img src="{% if fa.fa_travel.image %} {{ fa.fa_travel.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+				</div>
+				<div class="recommend-col-text">
+					<div class="recommend-col-text-topic">
+						<a href="{% url 'article' 'travel' fa.fa_travel.id %}">{{ fa.fa_travel.title }}</a>
+					</div>
+					<div class="recommend-col-text-text">
+						{{ fa.fa_travel.content }}
+					</div>
+				</div>
+			</div>
+
+			<div class="recommend-col recommend-col-border2">
+				<div class="recommend-col-img">
+					<img src="{% if fa.fa_lit.image %} {{ fa.fa_lit.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+				</div>
+				<div class="recommend-col-text">
+					<div class="recommend-col-text-topic">
+						<a href="{% url 'article' 'lit' fa.fa_lit.id %}">{{ fa.fa_lit.title }}</a>
+					</div>
+					<div class="recommend-col-text-text">
+						{{ fa.fa_lit.content }}
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>

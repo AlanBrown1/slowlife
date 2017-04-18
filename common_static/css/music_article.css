@@ -1,0 +1,131 @@
+#article {
+	width: 740px;
+}
+
+#article a:link, #article a:visited {
+	text-decoration: none;
+	color: #000;
+}
+
+#article-topic {
+	height: 40px;
+	width: 735px;
+	line-height: 40px;
+	font-size: 17px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+}
+
+#article-topic span {
+	display: inline-block;
+	height: 15px;
+	line-height: 15px;
+	margin-left: 30px;
+	font-size: 12px;
+	position: relative;
+	top: 2px;
+	left: 60px;
+}
+
+#article-content {
+	min-height: 1380px;
+	width: 735px;
+	font-size: 14px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+
+}
+
+#article-music {
+	/*height: 50px;*/
+	padding-top: 20px;
+	margin-bottom: 20px;
+	width: 735px;
+}
+
+#article-music-container {
+	/*width: 60%;*/
+	margin: 0 auto;
+}
+
+#article-text {
+	padding-left: 5px;
+	height: 450px;
+	width: 735px;
+}
+
+#article-like-share {
+	height: 30px;
+	width: 735px;
+	line-height: 30px;
+	font-size: 15px;
+	padding-left: 5px;	
+	padding-bottom: 10px;
+}
+
+#article-like {
+	height: 30px;
+	width: 100px;
+	float: left;
+}
+
+#article-like span {
+	display: inline-block;
+	line-height: 22px;
+	width: 60px;
+	text-align: center;
+	background-color: #a5d6a7;
+	cursor: pointer;
+	border-radius: 5px;
+
+}
+
+#article-like  div {
+	float: left;
+	margin-right: 3px;
+}
+
+#article-like img {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+
+#article-share {
+	height: 30px;
+	width: 400px;
+	float: left;
+}
+
+#article-share-text {
+	float: left;
+	height: 30px;
+}
+
+#article-share-ul {
+	float: left;
+	height: 30px;
+}
+
+#article-share-ul ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#article-share ul li {
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	line-height: 30px;
+	margin: 0px 10px 0 0;
+
+}
+
+#article-share ul li  img {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+}

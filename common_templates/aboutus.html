@@ -1,0 +1,236 @@
+{% load staticfiles %}
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/aboutus.css' %}">
+
+<div id="aboutus">
+	<!-- 网站简介 -->
+	<div id="introduce">
+		<div id="intro-topic">网站简介</div>
+		<div id="intro-content">
+			<p>离开久坐的办公桌，走到窗前，看看脚下的车水马龙。社会繁杂，人心浮躁，我们被湮没在快节奏生活的忙乱之中，何处寻觅一片安静的心灵乐土？</p>
+			<p>闭上眼，深呼吸，想想自己所做的一切都是为了什么？</p>
+			<p>忙着生存，为了父母、为了爱人、为了孩子，别谈理想，你太累了，别反驳。</p>
+			<p>慢生活，不是口号，不是拖延，不是理想。</p>
+			<p>慢生活，是关注自己的心灵，在工作和生活中放慢速度，静静冥想，静静反思，安静中体会生命盛大。</p>
+			<p>慢生活网站弘扬慢生活文化，倡导人们静下心、用心感受生活、发现生活中的美好。网站是作者独自开发，一方面是为了自己，给自己在繁忙的生活中寻找一片乐土；另一方面是为了分享，让大家能关注生活中的美好，慢下来，慢生活。</p>
+			<p>在这里，你可以身心放松，我们向你分享自由、健康、快乐的生活方式；我们关注你的衣食住行，你可以学做美食、养花草、看萌宠、听音乐、品文学、规划旅程......</p>
+
+			<p>希望慢生活网站能让使用者放松身心，找到生命和生活的真正意义，回归纯粹、质朴、简约的慢生活。</p>
+		</div>
+	</div>
+
+	<!-- 使用协议 -->
+	<div id="useagreement">
+		<div id="use-topic">使用协议</div>
+		<div id="use-content">
+			<p>用户发表在慢生活网站上的内容，如果没有作者本人的特别声明，均使用知识共享 <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/cn/">署名-非商业性使用-相同方式共享 2.5</a> 许可协议。</p>
+			<p>您可以自由：复制、发行、展览、表演、放映、广播或通过信息网络传播本作品。</p>
+			<p>创作演绎作品惟须遵守下列条件：<br>
+				署名. 您必须按照作者或者许可人指定的方式对作品进行署名。
+				非商业性使用. 您不得将本作品用于商业目的。
+				相同方式共享. 如果您改变、转换本作品或者以本作品为基础进行创作，您只能采用与本协议相同的许可协议发布基于本作品的演绎作品。
+				对任何再使用或者发行，您都必须向他人清楚地展示本作品使用的许可协议条款。
+				如果得到著作权人的许可，您可以不受任何这些条件的限制。
+				Nothing in this license impairs or restricts the author's moral rights.
+			</p>
+
+			<p>网络中转载慢生活用户发布的文章，请注意遵守上述协议。传统媒体使用发布在慢生活网站里的文字或图片，请事先联系作者征得同意。要联系作者，可以使用邮件形式。</p>
+			<p>对于违反上述协议使用慢生活用户作品的行为，作者和慢生活保留追究法律责任的权利。</p>
+		</div>
+	</div>
+
+
+	<div id="aboutus-offer-article">
+		<div id="aboutus-offer-topic">提供稿件</div>
+		<div>
+			<p>欢迎您来稿。请将您的文章发送邮件至<span>123456789@163.com</span>，审核通过后我们将发布在网站中；并通知您，根据文章质量为您提供100至2000元的稿费。</p>
+			<p>来稿注意事项：</p>
+			<p>
+				1，请在邮件中提供您的联系方式（姓名、电话号码等），以便我们能及时联系到您。<br>
+				2，请注明文章所属类别。可供选择的类别有：<br>&nbsp&nbsp&nbsp&nbsp&nbsp慢生活[美食、创意、萌宠、健康、情感、花草]<br>&nbsp&nbsp&nbsp&nbsp&nbsp慢音乐[推荐、歌手、专辑、类型、心情]<br>&nbsp&nbsp&nbsp&nbsp&nbsp慢旅行[摄影、景点、记录、攻略、驿站]<br>&nbsp&nbsp&nbsp&nbsp&nbsp慢文学[名著、美文、诗词、枕书、随笔]
+
+			</p>
+		</div>
+	</div>
+
+
+	<!-- 意见反馈 -->
+	<div id="advise">
+		<div id="advise-topic">意见反馈</div>
+		<div id="advise-content">
+			<p>感谢您为慢生活网站提出宝贵的建议或意见。如若留下联系方式，将有机会获得精美礼品！</p>
+			<p>当然，您也可以给我发邮件<span id="mail">123456789@163.com</span>进行反馈。</p>
+			<form method="post" enctype="multipart/form-data">
+				{% csrf_token %}
+				<textarea id="advise_content" name="content" onkeyup="checkLen(this);" 
+				placeholder="如若留下联系方式，将有机会获得精美礼品！"
+				style="background-image: url({% static 'img/textarea.png' %});" 
+				></textarea>
+
+				<!-- <input class="selectfile" type="file" id="file" 
+				accept="image/png, image/jpg, image/jpeg,text/plain, application/pdf, application/msword " name="uploadfile"></input>
+				<p>(注意：只支持 *.jpg/*.jpeg/*.png/*.txt/*.pdf/*.doc  格式的一个文件，且文件大小不超过5M)</p> -->
+
+				<button type="button" class="advise-submit" onclick="uploadFile();">提&nbsp&nbsp交</button>
+				<span id="typeIsValid"></span>
+				<p id="wordCount">您还可以输入：<span id="wordRes">500</span> 字</p>
+			</form>
+
+		</div>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+	// textarea控制字数
+	function checkLen(obj){
+		var maxChars = 500;
+		if(obj.value.length > maxChars){
+			obj.value = obj.value.substring(0, maxChars);
+		}
+		var curr = maxChars - obj.value.length;
+		document.getElementById("wordRes").innerHTML = curr.toString();
+		$("#typeIsValid").css('display','none');
+	}
+
+
+	// 在django模板中使用ajax需要加入这些代码 ******* start ************
+	function getCookie(name) {
+		var cookieValue = null;
+		if (document.cookie && document.cookie != '') {
+			var cookies = document.cookie.split(';');
+			for (var i = 0; i < cookies.length; i++) {
+				var cookie = jQuery.trim(cookies[i]);
+				if (cookie.substring(0, name.length + 1) == (name + '=')) {
+					cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+					break;
+				}
+			}
+		}
+		return cookieValue;
+	}
+
+	$.ajaxSetup({
+		beforeSend: function(xhr, settings){ 
+			xhr.setRequestHeader("X-CSRFToken", getCookie('csrftoken'));              //request头需要添加csrftoken,告诉服务器，我是个好yin哪，我是正常访问者
+      	}
+    });
+	// 在django模板中使用ajax需要加入这些代码 ******* end ************
+
+	function uploadFile(){
+		var obj = document.getElementById("typeIsValid");
+		var content = $("#advise_content").val();
+		if(content != ''){
+			postdata = {
+				'fileType': 'no',
+				'content': content,
+			};
+
+			$.post('/advise/',postdata,function(data){
+				if(data=='ok'){
+					obj.style.display = 'inline-block';
+					obj.innerHTML = '提交成功，非常感谢您的意见或建议！祝您生活愉快！' ;
+				}else if(data=='wrong'){
+					obj.style.display = 'inline-block';
+					obj.innerHTML = '记录在后台存储失败' ;
+				}
+		    });
+		}else{
+			obj.style.display = 'inline-block';
+			obj.style.width = '150px';
+			obj.innerHTML = '您还没有输入内容。' ;
+		}
+	}
+
+
+
+
+	// function verifyType(){
+	// 	// 获取input file里面的文件
+	// 	var uploadfile = document.getElementById("file").files;
+	// 	// 获取textarea里面的文字
+	// 	var content = $("#advise_content").val();
+
+	// 	// 获取用来显示消息的span标签
+	// 	var obj = document.getElementById("typeIsValid");
+
+	// 	// 此处调用刚刚加入的js方法
+	// 	var csrftoken = getCookie('csrftoken');
+
+	// 	// 如果有附件（即用户准备上传文件或图片）
+	// 	if(uploadfile.length > 0){
+	// 		// try{
+	// 		size = uploadfile[0].size;   // 文件大小
+	// 		fileType = uploadfile[0].name.split('.');   // 文件名称
+	// 		fileType = fileType[fileType.length-1];     // 获取文件类型（后缀）
+
+	// 		var reader = new FileReader();
+	// 		reader.readAsBinaryString(uploadfile[0])   // 异步，把文件转为流
+
+	// 		// 判断文件类型，如果是 --> 文件
+	// 		if(fileType=='txt' | fileType=='pdf' | fileType== 'doc'){
+	// 			// 判断文件大小，如果大于5M
+	// 			if(uploadfile[0].size > 5300000){
+	// 				obj.style.display = 'inline-block';
+	// 				obj.innerHTML = '您选的文件大于5M，请重新选择。';
+	// 				console.log('here1')
+	// 			}else{
+	// 				// 如果文件大小和格式都符合要求，就开始上传
+	// 				postdata = {
+	// 					'fileType': 'file',
+	// 					'content': content,
+	// 					'uploadFile': reader.result,
+	// 				};
+
+	// 				$.post('/advise/',postdata,function(data){
+	// 					console.log('excute here');
+	// 					backShow(data);
+	// 		        });
+	// 			}
+	// 		// 判断文件类型，如果是 --> 图片
+	// 		}else if(fileType=='jpg' | fileType=='jpeg' | fileType=='png'){
+	// 			console.log('图片');
+
+	// 			var reader = new FileReader();
+	// 			reader.readAsBinaryString(uploadfile[0])   // 异步，把文件转为流1
+
+	// 			// 判断图片大小，如果大于5M
+	// 			if(uploadfile[0].size > 5300000){
+	// 				obj.style.display = 'inline-block';
+	// 				obj.innerHTML = '您选的文件大于5M，请重新选择。';
+	// 				console.log('here1')
+	// 			}else{
+	// 				postdata = {
+	// 					'fileType': 'image',
+	// 					'content': content,
+	// 					'uploadImage': reader.result,
+	// 				};
+	// 				result = '';
+	// 				$.post('/advise/',postdata,function(data){
+	// 					result = ''
+	// 					console.log('excute here ---> image');
+	// 					backShow(data);
+	// 		        });
+	// 		        console.log(result);
+	// 			}
+	// 		}	
+	// 	// 如果没有附件（即既没有文件也没有图片） 
+	// 	}else{
+	// 		console.log('没有附件');
+	// 		postdata = {
+	// 			'fileType': 'no',
+	// 			'content': content,
+	// 		};
+
+	// 		$.post('/advise/',postdata,function(data){
+	//            backShow(data);
+	//         });
+	//   		backShow('ok')
+	// 	}
+
+	// 	return false;
+	// }
+
+
+	
+</script>

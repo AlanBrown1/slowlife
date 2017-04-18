@@ -1,0 +1,44 @@
+<meta charset="utf-8" />
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/footer.css'%}">
+<!-- <link rel="stylesheet" type="text/css" href="footer.css"> -->
+<div id="footer">
+	<div id="footermid">
+		<div class="foo-col">
+			<p class="tp">关于慢生活</p>
+			<p><a href="{% url 'aboutus' 'introduce' %}">网站简介</a></p>
+			<p><a href="{% url 'aboutus' 'useagreement' %}">使用协议</a></p>
+			<!-- <p><a href="#">商谈合作</a></p> -->
+			<p><a href="{% url 'aboutus' 'advise' %}">意见反馈</a></p>
+		</div>
+		<div class="foo-col">
+			<p class="tp">慢生活导航</p>
+			<a href="{% url 'mainpage' 'life' 'p1' %}">慢生活</a>
+			<a href="{% url 'mainpage' 'travel' 'p1' %}">慢旅行</a>
+			<a href="{% url 'mainpage' 'music' 'p1' %}">慢音乐</a>
+			<a href="{% url 'mainpage' 'lit' 'p1' %}">慢文学</a>
+			<!-- <a href="#">慢话题</a> -->
+			<a href="{% url 'manrecommend' %}">慢推荐</a>
+			<!-- <a href="#">猫猫慢递</a> -->
+		</div>
+		<div class="foo-col">
+			<p class="tp">友情链接</p>
+			<p><a href="http://www.baidu.com" target="_blank">百度</a></p>
+			<p><a href="http://cn.bing.com" target="_blank">Bing</a></p>
+			<p><a href="http://www.google.com" target="_blank">Google</a></p>
+		</div>
+		<div class="foo-col">
+			<p class="tp">关注慢生活</p>
+			<a href="#"><img src="{% static 'img/footerimg/xinlang.png' %}" class="footer-img">新浪微博</a>
+			<a href="#"><img src="{% static 'img/footerimg/weixin.png' %}" class="footer-img">微信公众号</a>
+			<a href="#"><img src="{% static 'img/footerimg/facebook.png' %}" class="footer-img">facebook</a>
+			<a href="#"><img src="{% static 'img/footerimg/twitter.png' %}" class="footer-img">twitter</a>
+			<a href="#"><img src="{% static 'img/footerimg/instagram.png' %}" class="footer-img">Instagram</a>
+		</div>
+	</div>
+	<div id="copyright">
+		<div>
+			<p>All Rights Reserved &copy 2000-2017 <a href="">www.alanbrown.com</a> 京备</p>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,92 @@
+{% load staticfiles %}
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="{% static 'life_css/life.css'%}">
+
+<div id="life">
+	<div id="life-up">
+		<div id="life-up-left">慢生活</div>
+		<div id="life-up-right">
+			<ul>
+				<li><a href="{% url 'subpage' 'food' 'p1' %}">美&nbsp食</a></li>
+				<li><a href="{% url 'subpage' 'creation' 'p1' %}">创&nbsp意</a></li>
+				<li><a href="{% url 'subpage' 'pet' 'p1' %}">萌&nbsp宠</a></li>
+				<li><a href="{% url 'subpage' 'health' 'p1' %}">健&nbsp康</a></li>
+				<li><a href="{% url 'subpage' 'emotion' 'p1' %}">情&nbsp感</a></li>
+				<li><a href="{% url 'mainpage' 'life' 'p1' %}">更&nbsp多</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="life-down">
+		<div id="life-downdiv1" class="life-downdiv">
+			<div class="life-downimg">
+				<img src="{% if life.food.image %} {{ life.food.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+			</div>
+			<div class="life-downtext">
+				<div class="life-downtext_col life-col">
+					<div class="life-downtext-img">
+						<img src="{% if life.food.image %} {{ life.food.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+					</div>
+					<div class="life-downtext-text">
+						<a href="{% url 'article' 'life' life.food.id %}" class="life-topic">{{ life.food.title }}</a>
+						<p class="life-cont">{{ life.food.content|safe }}</p>
+					</div>
+				</div>
+				<div class="life-downtext_col life-col">
+					<div class="life-downtext-img">
+						<img src="{% if life.creation.image %} {{ life.creation.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+					</div>
+					<div class="life-downtext-text">
+						<a href="{% url 'article' 'life' life.creation.id %}" class="life-topic">{{ life.creation.title }}</a>
+						<p class="life-cont">{{ life.creation.content|safe }}</p>
+					</div>
+				</div>
+				<div class="life-downtext_col">
+					<div class="life-downtext-img">
+						<img src="{% if life.pet.image %} {{ life.pet.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+					</div>
+					<div class="life-downtext-text">
+						<a href="{% url 'article' 'life' life.pet.id %}" class="life-topic">{{ life.pet.title }}</a>
+						<p class="life-cont">{{ life.pet.content|safe }}</p>
+					</div>
+				</div>				
+			</div>
+		</div>
+
+		<div id="life-downdiv2" class="life-downdiv">
+			<div class="life-downimg">
+				<img src="{% if life.health.image %} {{ life.health.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+			</div>
+			<div class="life-downtext">
+				<div class="life-downtext_col life-col">
+					<div class="life-downtext-img">
+						<img src="{% if life.health.image %} {{ life.health.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+					</div>
+					<div class="life-downtext-text">
+						<a href="{% url 'article' 'life' life.health.id %}" class="life-topic">{{ life.health.title }}</a>
+						<p class="life-cont">{{ life.health.content|safe }}</p>
+					</div>
+				</div>
+				<div class="life-downtext_col life-col">
+					<div class="life-downtext-img">
+						<img src="{% if life.emotion.image %} {{ life.emotion.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+					</div>
+					<div class="life-downtext-text">
+						<a href="{% url 'article' 'life' life.emotion.id %}" class="life-topic">{{ life.emotion.title }}</a>
+						<p class="life-cont">{{ life.emotion.content|safe }}</p>
+					</div>
+				</div>
+				<div class="life-downtext_col">
+					<div class="life-downtext-img">
+						<img src="{% if life.flower.image %} {{ life.flower.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+					</div>
+					<div class="life-downtext-text">
+						<a href="{% url 'article' 'life' life.flower.id %}" class="life-topic">{{ life.flower.title }}</a>
+						<p class="life-cont">{{ life.flower.content|safe }}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+</div>

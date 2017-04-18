@@ -1,0 +1,110 @@
+body {
+	margin: 0px;
+}
+
+#manrecom {
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 20px;
+	border: 1px solid #ccc;
+}
+
+#manrecom-photo {
+	width: 1000px;；
+	height: 380px;
+}
+
+#manrecom-photo img {
+	display: block;
+	width: 1000px;
+	height: 380px;
+	border: none;
+}
+
+#manrecom-blankdiv {
+	width: 100%;
+	height: 20px;
+}
+
+#manrecom-content {
+	width: 100%；
+}
+
+.manrecom-col {
+	width: 960px;
+	height: 200px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.manrecom-col a:link, .manrecom-col a:visited {
+	color: #000;
+	text-decoration: none;
+}
+
+.manrecom-coltopic {
+	height: 29px;
+	width: 100%;
+	line-height: 29px;
+	font-size: 18px;
+	color: #99CC66;
+	border-bottom: 2px solid #99CC99; 
+}
+
+.manrecom-body {
+	height: 150px;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.manrecom-body-two {
+	height: 150px;
+	width: 468px;
+	float: left;
+	border: 1px solid #ccc;
+}
+
+.manrecom-body-two1 {
+	margin-right: 20px;
+}
+
+.manrecom-img {
+	height: 130px;
+	width: 130px;
+	margin-left: 10px;
+	float: left;
+	margin-top: 10px;
+	margin-right: 20px;
+	background-color: #fff;
+}
+
+.manrecom-img img {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+.manrecom-text {
+	height: 130px;
+	width: 300px;
+	float: left;
+	margin-top: 10px;
+	overflow: hidden;
+}
+
+.manrecom-text-topic {
+	height: 25px;
+	width: 100%;
+	line-height: 25px;
+	overflow: hidden;
+}
+
+.manrecom-text-topic a:link, .manrecom-text-topic a:visited {
+	color: #92c676;
+	font-weight: bold;
+}
+
+.manrecom-text-content {
+	font-size: 13px;
+	overflow: hidden;
+}

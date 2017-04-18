@@ -1,0 +1,158 @@
+/* ***************************  总体 ********************* */
+body {
+	margin: 0px;
+}
+
+#travel {
+	height: 250px;
+	width: 100%;
+	padding-bottom: 5px;
+}
+
+#travel a:link, #travel a:visited {
+	color: #99CC66;
+	font-weight: bold;
+}
+
+#travel p {
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+
+#travel-mid {
+	height: 250px;
+	width: 1000px;
+	margin: 0 auto;
+	border-radius: 10px;
+}
+
+/* ***************************  上部 ********************* */
+
+#travel-up {
+	height: 35px;
+	width: 100%;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	background-color: #3498db;
+}
+
+#travel-up-topic {
+	height: 35px;
+	width: 70px;
+	float: left;
+	text-align: center;
+	line-height: 35px;
+	font-size: 16px;
+	color: #fff;
+	border-top-left-radius: 10px;
+}
+
+#travel-up-ul {
+	float: left;
+	height: 35px;
+	width: 930px;
+	color: #fff;
+	border-top-right-radius: 10px;
+}
+
+#travel-up-ul ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+#travel-up-ul ul li {
+	display: inline-block;
+	height: 25px;
+	width: 50px;
+	margin: 7px 5px 0 5px;
+	line-height: 27px;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 12px;
+	color: #fff;
+}
+
+#travel-up-ul ul li:hover {
+	background-color: #FF9999;
+}
+
+#travel-up-ul ul li a:link, #travel-up-ul ul li a:visited {
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+	text-decoration: none;
+	color: #fff;
+}
+
+/* ***************************  下部 ********************* */
+
+#travel-down {
+	height: 210px;
+	width: 100%;
+	padding-top: 5px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	/*background-color: #e7e7e7;*/
+
+}
+
+.travel-col {
+	height: 210px;
+	width: 192px;
+	float: left;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+.travel-column {
+	margin-right: 10px;
+}
+
+.travel-col-border1 {
+	border-bottom-left-radius: 10px;
+}
+
+.travel-col-border2 {
+	border-bottom-right-radius: 10px;
+}
+
+.travel-col-img {
+	height: 128px;
+	width: 192px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.travel-col-img img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: pink;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.travel-col-text {
+	height: 77px;
+	width: 192px;
+	padding-top: 5px;
+}
+
+.travel-col-text-topic {
+	height: 25px;
+	width: 192px;
+	overflow: hidden;
+	font-size: 15px;
+	/*padding-left: 5px;*/
+	line-height: 25px;
+}
+
+.travel-col-text-topic a:link, .travel-col-text-topic:visited {
+	text-decoration: none;
+}
+
+.travel-col-text-text {
+	height: 50px;
+	width: 192px;
+	padding-top: 2px;
+	padding-left: 2px;
+	overflow: hidden;
+	font-size: 12px;
+}

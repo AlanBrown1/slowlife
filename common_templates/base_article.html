@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>慢生活 - 慢下来，静下心，发现身边的美。</title>
+	<meta charset="utf-8" />
+	{% load staticfiles %}
+	<!-- 搜索引擎搜索词 -->
+	<meta name="keywords" content="慢生活, 慢旅行, 慢音乐, 慢文学, 慢话题, 快生活, 慢推荐, 猫猫慢递" />
+	<!-- 网站描述 -->
+	<meta name="description" content="慢生活, 慢旅行, 慢音乐, 慢文学, 慢话题, 快生活, 慢推荐, 猫猫慢递">
+	<!-- 网站作者Alan Brown -->
+	<meta name="author" content="Alan Brown.">
+
+	<!-- 收藏夹图标 -->
+	<link href="{% static 'img/headerimg/web_icon.png'%}" rel="bookmark" type="image/x-icon" />
+	<!-- 网址前面的图标 -->
+	<link href="{% static 'img/headerimg/web_icon.png'%}" rel="shortcut icon" type="image/x-icon" /> 
+
+	<link rel="stylesheet" type="text/css" href="{% static 'css/base_aboutus.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/material-scrolltop.css' %}">
+
+	<!-- <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script> -->
+
+	<style type="text/css">
+		body {
+			background-color: #f2f1ef;
+		}
+	</style>
+</head>
+<body>
+<!-- 头部header -->
+<header>
+	{% include 'header.html' %}
+</header>
+<div style="height: 5px;"></div>
+
+<!-- 文章（分为左边main_page_left.html和右边page_right.html） -->
+<div id="base_aboutus">
+	<div id="base_aboutus_mid">
+		<div id="base_aboutus_left">
+			{% if fenlei != 'music' %}
+				{% include 'article.html' %}
+			{% else %}
+				{% include 'music_article.html' %}
+			{% endif %}
+		</div>
+		<div id="base_aboutus_right">
+			{% include 'page_right.html' %}
+		</div>
+	</div>
+</div>
+
+
+<!-- 页脚footer -->
+<div style="clear: both;">
+{% include 'footer.html' %}	
+</div>
+
+<button class="material-scrolltop" type="button" style="cursor: pointer;"></button>
+
+<script type="text/javascript" src="{% static 'js/material-scrolltop.js' %}"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		// 回到顶部
+		$('body').materialScrollTop({
+		    revealElement: 'header',
+		    revealPosition: 'bottom',
+		    // padding: 200,
+		    onScrollEnd: function() {
+		        console.log('Scrolling End');
+		    }
+		});
+	})
+</script>
+
+
+</body>
+</html>

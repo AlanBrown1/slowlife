@@ -1,0 +1,29 @@
+#base_main_page {
+	/*height: 1840px;*/
+}
+
+#base_main_page a:link, #base_main_page a:visited {
+	text-decoration: none;
+}
+
+#base_main_page_mid {
+	height: 100%;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#base_main_page_left {
+	height: 100%;
+	width: 740px;
+	float: left;
+}
+
+#base_main_page_right {
+	height: 100%;
+	width: 240px;
+	float: right;
+}
+
+#base_main_page_footer {
+	clear: both;
+}

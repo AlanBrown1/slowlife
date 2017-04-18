@@ -1,0 +1,92 @@
+{% load staticfiles %}
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="{% static 'music_css/music.css'%}">
+
+<div id="music">
+	<div id="music-up">
+		<div id="music-up-left">慢音乐</div>
+		<div id="music-up-right">
+			<ul>
+				<li><a href="{% url 'subpage' 'recommend' 'p1' %}">推&nbsp荐</a></li>
+				<li><a href="{% url 'subpage' 'singer' 'p1' %}">歌&nbsp手</a></li>
+				<li><a href="{% url 'subpage' 'album' 'p1' %}">专&nbsp辑</a></li>
+				<li><a href="{% url 'subpage' 'category' 'p1' %}">类&nbsp型</a></li>
+				<li><a href="{% url 'subpage' 'mood' 'p1' %}">心&nbsp情</a></li>
+				<li><a href="{% url 'mainpage' 'music' 'p1' %}">更&nbsp多</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="music-down">
+		<div id="music-downdiv1" class="music-downdiv">
+			<div class="music-downimg">
+				<img src="{% if music.recommend1.image %} {{ music.recommend1.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+			</div>
+			<div class="music-downtext">
+				<div class="music-downtext_col music-col">
+					<div class="music-downtext-img">
+						<img src="{% if music.recommend1.image %} {{ music.recommend1.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+					</div>
+					<div class="music-downtext-text">
+						<a href="{% url 'article' 'music' music.recommend1.id %}" class="music-topic">{{ music.recommend1.title }}</a>
+						<p class="music-cont">{{ music.recommend1.content }}</p>
+					</div>
+				</div>
+				<div class="music-downtext_col music-col">
+					<div class="music-downtext-img">
+						<img src="{% if music.recommend2.image %} {{ music.recommend2.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+					</div>
+					<div class="music-downtext-text">
+						<a href="{% url 'article' 'music' music.recommend2.id %}" class="music-topic">{{ music.recommend2.title }}</a>
+						<p class="music-cont">{{ music.recommend2.content }}</p>
+					</div>
+				</div>
+				<div class="music-downtext_col music-col">
+					<div class="music-downtext-img">
+						<img src="{% if music.singer.image %} {{ music.singer.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+					</div>
+					<div class="music-downtext-text">
+						<a href="{% url 'article' 'music' music.singer.id %}" class="music-topic">{{ music.singer.title }}</a>
+						<p class="music-cont">{{ music.singer.content }}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="music-downdiv2" class="music-downdiv">
+			<div class="music-downimg">
+				<img src="{% if music.album.image %} {{ music.album.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+			</div>
+			<div class="music-downtext">
+				<div class="music-downtext_col music-col">
+					<div class="music-downtext-img">
+						<img src="{% if music.album.image %} {{ music.album.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+					</div>
+					<div class="music-downtext-text">
+						<a href="{% url 'article' 'music' music.album.id %}" class="music-topic">{{ music.album.title }}</a>
+						<p class="music-cont">{{ music.album.content }}</p>
+					</div>
+				</div>
+				<div class="music-downtext_col music-col">
+					<div class="music-downtext-img">
+						<img src="{% if music.category.image %} {{ music.category.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+					</div>
+					<div class="music-downtext-text">
+						<a href="{% url 'article' 'music' music.category.id %}" class="music-topic">{{ music.category.title }}</a>
+						<p class="music-cont">{{ music.category.content }}</p>
+					</div>
+				</div>
+				<div class="music-downtext_col music-col">
+					<div class="music-downtext-img">
+						<img src="{% if music.mood.image %} {{ music.mood.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+					</div>
+					<div class="music-downtext-text">
+						<a href="{% url 'article' 'music' music.mood.id %}" class="music-topic">{{ music.mood.title }}</a>
+						<p class="music-cont">{{ music.mood.content }}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+</div>

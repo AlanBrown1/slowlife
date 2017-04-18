@@ -1,0 +1,145 @@
+{% load staticfiles %}
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/page_right.css' %}">
+<!-- <link rel="stylesheet" type="text/css" href="page.css"> -->
+
+<!-- 右边 -->
+<div id="page-right">
+	<div id="publish-article">
+		<!-- <div id="publish-img"><img src=""></div>
+		<div id="publish-btn">
+			<a href="#">我要发布文章</a>
+		</div> -->
+		<img src="{% static 'img/headerimg/page_right.png' %}">
+	</div>
+	<!-- 最新文章 -->
+	<div id="newest-article">
+		<div id="newest-topic">最新文章</div>
+		<!-- 第x篇最新文章  start -->
+		<!-- life有两篇 -->
+		{% for art in new_life %}
+		<div class="newest-article">
+			<div class="newest-article-topic"><a href="{% url 'article' 'life' art.id %}">{{ art.title }}</a></div>
+			<div class="newest-article-imgtext">
+				<div class="newest-article-img">
+					<img src="{% if art.image %} {{ art.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+				</div>
+				<div class="newest-article-text">
+					<div class="newest-article-date">{{ art.publishtime|date:"Y-m-d H:i:s" }}</div>
+					<div class="newest-article-comment">赞({{ art.zan }})</div>
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+		<!-- 第x篇最新文章  end -->
+
+		<!-- music有1篇 -->
+		<div class="newest-article">
+			<div class="newest-article-topic"><a href="{% url 'article' 'music' new_music.id %}">{{ new_music.title }}</a></div>
+			<div class="newest-article-imgtext">
+				<div class="newest-article-img">
+					<img src="{% if new_music.image %} {{ new_music.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+				</div>
+				<div class="newest-article-text">
+					<div class="newest-article-date">{{ new_music.publishtime|date:"Y-m-d H:i:s" }}</div>
+					<div class="newest-article-comment">赞({{ new_music.zan }})</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- travel有一篇 -->
+		<div class="newest-article">
+			<div class="newest-article-topic"><a href="{% url 'article' 'travel' new_travel.id %}">{{ new_travel.title }}</a></div>
+			<div class="newest-article-imgtext">
+				<div class="newest-article-img">
+					<img src="{% if new_travel.image %} {{ new_travel.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+				</div>
+				<div class="newest-article-text">
+					<div class="newest-article-date">{{ new_travel.publishtime|date:"Y-m-d H:i:s" }}</div>
+					<div class="newest-article-comment">赞({{ new_music.zan }})</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- lit有两篇 -->
+		{% for art in new_lit %}
+		<div class="newest-article">
+			<div class="newest-article-topic"><a href="{% url 'article' 'lit' art.id %}">{{ art.title }}</a></div>
+			<div class="newest-article-imgtext">
+				<div class="newest-article-img">
+					<img src="{% if art.image %} {{ art.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+				</div>
+				<div class="newest-article-text">
+					<div class="newest-article-date">{{ art.publishtime|date:"Y-m-d H:i:s" }}</div>
+					<div class="newest-article-comment">赞({{ art.zan }})</div>
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+
+	</div>
+
+	<!-- 慢生活精选 -->
+	<div id="man-article">
+		<div id="man-topic">慢生活精选</div>
+		<!-- 第x篇慢生活精选   start -->
+		<!-- life有两篇 -->
+		{% for art in jing_life %}
+		<div class="man-article">
+			<div class="man-article-topic"><a href="{% url 'article' 'life' art.id %}">{{ art.title }}</a></div>
+			<div class="man-article-imgtext">
+				<div class="man-article-img">
+					<img src="{% if art.image %} {{ art.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+				</div>
+				<div class="man-article-text">
+					<div class="man-article-date">{{ art.publishtime|date:"Y-m-d H:i:s" }}</div>
+					<div class="man-article-comment">赞({{ art.zan }})</div>
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+		<!-- 第x篇慢生活精选   end -->
+
+		<div class="man-article">
+			<div class="man-article-topic"><a href="{% url 'article' 'music' jing_music.id %}">{{ jing_music.title }}</a></div>
+			<div class="man-article-imgtext">
+				<div class="man-article-img">
+					<img src="{% if jing_music.image %} {{ jing_music.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+				</div>
+				<div class="man-article-text">
+					<div class="man-article-date">{{ jing_music.publishtime|date:"Y-m-d H:i:s" }}</div>
+					<div class="man-article-comment">赞({{ jing_music.zan }})</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="man-article">
+			<div class="man-article-topic"><a href="{% url 'article' 'travel' jing_travel.id %}">{{ jing_travel.title }}</a></div>
+			<div class="man-article-imgtext">
+				<div class="man-article-img">
+					<img src="{% if jing_travel.image %} {{ jing_travel.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+				</div>
+				<div class="man-article-text">
+					<div class="man-article-date">{{ jing_travel.publishtime|date:"Y-m-d H:i:s" }}</div>
+					<div class="man-article-comment">赞({{ jing_travel.zan }})</div>
+				</div>
+			</div>
+		</div>
+
+		{% for art in jing_lit %}
+		<div class="man-article">
+			<div class="man-article-topic"><a href="{% url 'article' 'lit' art.id %}">{{ art.title }}</a></div>
+			<div class="man-article-imgtext">
+				<div class="man-article-img">
+					<img src="{% if art.image %} {{ art.image.url }} {% else %} {% static 'img/image_none.png' %} {% endif %}">
+				</div>
+				<div class="man-article-text">
+					<div class="man-article-date">{{ art.publishtime|date:"Y-m-d H:i:s" }}</div>
+					<div class="man-article-comment">赞({{ art.zan }})</div>
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+
+	</div>
+</div>
