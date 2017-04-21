@@ -6,7 +6,7 @@
 	<div id="article-topic">
 		{{ article.title }}
 		<span>作者：{{article.author}}</span>
-		<span>发布日期：{{ article.publishtime }}</span>
+		<span>发布日期：{{ article.publishtime|date:"Y-m-d H:i:s" }}</span>
 	</div>
 	<div id="article-content">{{ article.content|safe }}</div>
 	<div id="article-like-share">

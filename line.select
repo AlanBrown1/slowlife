@@ -1,0 +1,9 @@
+#!*.txt
+#!*.docx
+#!*.png
+#!*.jpg
+#!*.jpeg
+#!*.js
+#!*.sqlite3
+
+*.py
